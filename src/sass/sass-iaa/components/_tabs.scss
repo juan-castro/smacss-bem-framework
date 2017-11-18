@@ -1,0 +1,90 @@
+/*TAB STYLES*/
+
+.nav-tabs {
+	position: relative;
+	z-index: 1;
+
+	&:after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+
+	& > li {
+		border: 1px solid #DDDDDD;
+		width: 100%;
+		margin-bottom: -1px;
+
+		&:last-child {
+			border-right: 1px solid #DDDDDD;
+		}
+
+		&.active {
+			border-bottom: 1px solid #FFFFFF;
+
+			a {
+				color: #333333;
+				border-top: 3px solid #C90107;
+			}
+		}
+
+		& > a {
+			line-height: 1.5;
+			color: #888888;
+			background: #F4F4F4;
+			position: relative;
+			display: block;
+			padding: 1rem 2rem;
+			font-weight: 700;
+			text-decoration: none;
+			border-top: 3px solid #AAAAAA;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+	cursor: default;
+	background-color: #FFFFFF;
+}
+
+
+@media only screen and (min-width : 768px) {
+	.nav-tabs {
+		display: flex;
+
+		& > li {
+			margin-bottom: -1px;
+			border-right: none;
+			width: auto;
+			float: left;
+
+			&:last-child {
+				border-right: 1px solid #DDDDDD;
+			}
+		}
+	}
+}
+
+.tab-content {
+	padding: 2rem;
+	border: 1px solid #DDDDDD;
+	z-index: 0;
+
+	& > .tab-pane {
+		display: none;
+	}
+
+	& > .active {
+		display: block;
+	}
+}
+

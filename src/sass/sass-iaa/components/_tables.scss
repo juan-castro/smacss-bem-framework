@@ -1,0 +1,55 @@
+.table {
+	width: 100%;
+	background: #FFFFFF;
+	border: none;
+
+	tr {
+		border-bottom: 1px solid #DDDDDD;
+	}
+
+	th, td {
+		padding: 1rem 1.5rem;
+		border: none;
+	}
+
+	th {
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1rem;
+	}
+}
+
+.table--striped {
+	tbody > tr:nth-child(odd) > td {
+		background-color: $iaa-lightest-gray;
+	}
+}
+
+.table--hover {
+	tbody tr {
+		&:hover {
+			background-color: $iaa-lightest-gray;
+		}
+	}
+}
+
+.table--compact {
+	thead > tr {
+		border-bottom: 0.1rem solid #DDDDDD;
+	}
+
+	th,
+	td {
+		padding: 0.3rem;
+	}
+}
+
+.table-responsive {
+	overflow-x: auto;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+
+	table {
+		margin-bottom: 0.5rem;
+	}
+}

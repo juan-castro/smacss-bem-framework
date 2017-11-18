@@ -1,0 +1,64 @@
+.alert {
+	padding: 1rem 2rem;
+	margin: auto;
+	align-items: center;
+	line-height: 2;
+	margin-bottom: $container-margin-bottom;
+
+	&__message {
+		width: auto;
+		margin: 0 0 0 1rem;
+		font-weight: $font-weight-semi;
+		display: inline;
+	}
+
+	&__icon {
+		fill: #333333;
+		width: 2rem;
+		height: 2rem;
+		display: inline-block;
+		top: 0.5rem;
+		position: relative;
+	}
+
+	&__btn-close {
+		position: absolute;
+		right: 1.5rem;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+
+		/*Delete after icon is added*/
+		width: 1.5rem;
+		height: 1.5rem;
+		outline: 1px solid white;
+		/*Delete after icon is added*/
+	}
+
+	&--success {
+		background: #0C8346;
+		color: $white-color;
+
+		.icon {
+			fill: $white-color;
+		}
+	}
+
+	&--warning {
+		background: #FFBF00;
+		color: $iaa-black;
+
+		.icon {
+			fill: $iaa-black;
+		}
+	}
+
+	&--error {
+		background: #C90107;
+		color: $white-color;
+
+		.icon {
+			fill: $white-color;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@mixin badge-color-border($color) {
+	border-color: $color;
+	color: $color;
+
+	@if $color == $iaa-yellow {
+		color: $iaa-dark-gray;
+	}
+}
+
+@mixin badge-color-solid($color) {
+	border: none;
+	background-color: $color;
+	color: $white-color;
+
+	@if $color == $iaa-yellow {
+		color: $iaa-dark-gray;
+	}
+}
+
+@mixin badge-size($padding-vertical, $padding-horizontal, $font-size) {
+	font-size: $font-size;
+	padding: $padding-vertical $padding-horizontal;
+}

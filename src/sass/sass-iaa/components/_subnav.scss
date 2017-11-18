@@ -1,0 +1,32 @@
+/*GLOBAL SUB NAVIGATION STYLES*/
+
+.sub-nav {
+	background: #222222;
+	padding: 0 2rem;
+	margin: 0;
+
+	&__item {
+		margin: 0;
+		color: #FFFFFF;
+		font-weight: 700;
+		padding: 0.75rem 2rem;
+		display: block;
+		width: auto;
+		float: left;
+		transition: background-color 0.2s ease;
+		border-left: 1px solid #434343;
+
+		&:last-of-type {
+			border-right: 1px solid #434343;
+		}
+
+		&:hover {
+			background: #434343;
+			text-decoration: none;
+		}
+
+		&--active {
+			background: #C90107;
+		}
+	}
+}

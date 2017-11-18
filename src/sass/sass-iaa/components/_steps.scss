@@ -1,0 +1,98 @@
+
+
+.step-counter > .step-counter-step {
+	padding: 0;
+	position: relative;
+}
+
+.step-counter > .step-counter-step .step-counter-number {
+	color: #434343;
+	font-size: 1.4rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+.step-counter > .step-counter-step > .step-counter-dot {
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	background: #FFFFFF;
+	border: 3px solid #AAAAAA;
+	top: 1.7rem;
+	left: 50%;
+	margin-top: -1.5rem;
+	margin-left: -2rem;
+	border-radius: 50%;
+	font-weight: 600;
+	text-align: center;
+	padding-top: 0.4rem;
+	color: #AAAAAA;
+	font-size: 1.8rem;
+}
+.step-counter > .step-counter-step.active > .step-counter-dot {
+	color: #238723;
+	border-color: #238723;
+}
+.step-counter > .step-counter-step.complete > .step-counter-dot {
+	color: #238723;
+	border-color: #238723;
+	text-indent: -9999px;
+	background: #FFFFFF url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' width='18px' height='18px' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.414'%3E%3Cpath d='M18 3.498L9.23 14.255l-2 2.613-2.46-2.152L0 10.876 2.154 8.26l4.615 3.996L15.384 1.5 18 3.498z' fill='%23238723'/%3E%3C/svg%3E") no-repeat 0.8rem 0.8rem;
+	background-size: 1.8rem 1.8rem;
+}
+.step-counter > .step-counter-step > .step-counter-dot:before {
+	border: 3px solid #FFFFFF;
+	border-radius: 5rem;
+	content: " ";
+	position: absolute;
+	left: -0.6rem;
+	top: -0.6rem;
+	width: 4.6rem;
+	height: 4.6rem;
+}
+
+.step-counter > .step-counter-step > .progress {
+	position: relative;
+	border-radius: 0;
+	height: 0.3rem;
+	box-shadow: none;
+	margin: 2rem 0;
+	background: #AAAAAA;
+}
+
+.step-counter > .step-counter-step > .progress > .progress-bar {
+	width: 0;
+	box-shadow: none;
+	background: #238723;
+	height: 0.3rem;
+}
+.step-counter > .step-counter-step.complete > .progress > .progress-bar {
+	width: 100%;
+}
+.step-counter > .step-counter-step.active > .progress > .progress-bar {
+	width: 50%;
+}
+.step-counter > .step-counter-step:first-child.active > .progress > .progress-bar {
+	width: 0;
+}
+.step-counter > .step-counter-step:last-child.active > .progress > .progress-bar {
+	width: 100%;
+}
+
+.step-counter > .step-counter-step:first-child > .progress {
+	left: 50%;
+	width: 50%;
+}
+.step-counter > .step-counter-step:last-child > .progress {
+	width: 50%;
+}
+.step-counter > .step-counter-step.disabled a.step-counter-dot {
+	pointer-events: none;
+}
+
+.step-counter > .step-counter-step.disabled > .step-counter-dot {
+	background-color: #FFFFFF;
+}
+.step-counter > .step-counter-step.disabled > .step-counter-dot:after {
+	opacity: 0;
+}

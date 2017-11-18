@@ -1,0 +1,81 @@
+/*GLOBAL BADGE STYLES*/
+
+.badge-container {
+	margin-bottom: $container-margin-bottom;
+}
+
+.badge {
+	font-weight: $font-weight-bold;
+	text-align: center;
+	white-space: nowrap;
+	border-radius: 2rem;
+	display: inline-block;
+	text-transform: uppercase;
+	margin-right: 0.5rem;
+	width: auto;
+	line-height: 1;
+	vertical-align: middle;
+
+	&--ol {
+		color: #333333;
+		border: 1px solid $iaa-dark-gray;
+		background: none;
+
+		&.badge--yellow {
+			@include badge-color-border($iaa-yellow);
+		}
+
+		&.badge--red {
+			@include badge-color-border($iaa-red);
+		}
+
+		&.badge--blue {
+			@include badge-color-border($iaa-blue);
+		}
+
+		&.badge--green {
+			@include badge-color-border($iaa-green);
+		}
+	}
+
+	&--sd {
+		border: none;
+		background: $iaa-dark-gray;
+		color: $white-color;
+
+		&.badge--yellow {
+			@include badge-color-solid($iaa-yellow);
+		}
+
+		&.badge--red {
+			@include badge-color-solid($iaa-red);
+		}
+
+		&.badge--blue {
+			@include badge-color-solid($iaa-blue);
+		}
+
+		&.badge--green {
+			@include badge-color-solid($iaa-green);
+		}
+	}
+
+	/* Badge Sizes */
+	&--sm {
+		@include badge-size(0.6rem, 1rem, 0.9rem);
+	}
+	
+	&--md {
+		@include badge-size(0.6rem, 1.5rem, 1.1rem);
+	}
+
+	&--lg {
+		@include badge-size(0.6rem, 2rem, 1.3rem);
+	}
+}
+
+
+
+
+
+

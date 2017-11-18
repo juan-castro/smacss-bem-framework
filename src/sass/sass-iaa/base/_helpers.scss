@@ -1,0 +1,71 @@
+/* Clearfix */
+
+.u-clearfix {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+
+/* Width */
+
+.u-full-width {
+	width: 100%;
+}
+
+.u-max-full-width {
+	max-width: 100%;
+}
+
+/* Floats */
+
+.u-pull--right {
+	float: right;
+}
+
+.u-pull--left {
+	float: left;
+}
+
+/* Text Alignment */
+
+.u-ta--left {
+	text-align: left;
+}
+
+.u-ta--center {
+	text-align: center;
+}
+
+.u-ta--right {
+	text-align: right;
+}
+
+/* Disabled */
+
+.u-disabled {
+	cursor: default;
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+/* List */
+
+.u-list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+.u-list-inline {
+	padding-left: 0;
+	list-style: none;
+}
+
+.u-list-inline-block {
+	display: inline-block;
+
+	&:not(:last-child) {
+		margin-right: 5px;
+	}
+}
