@@ -15,7 +15,7 @@ const minify        = require('gulp-cssnano');          //CSS Minification
 const root = __dirname;
 const paths = {
   src: {
-    css:     path.join(root, 'src/sass/sass-iaa/**/*.scss')
+    css:     path.join(root, 'src/scss/**/*.scss')
   },
   output: {
   	css: 	 path.join(root, 'build/css')
