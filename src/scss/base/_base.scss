@@ -1,3 +1,9 @@
+/* 
+-----------------------------------------------------------------
+Base Styles
+-----------------------------------------------------------------
+*/
+
 *,
 *::before,
 *::after {
@@ -52,7 +58,6 @@ hr {
 abbr[title],
 abbr[data-original-title] {
 	text-decoration: underline;
-	text-decoration: underline dotted;
 	cursor: help;
 	border-bottom: 0;
 }

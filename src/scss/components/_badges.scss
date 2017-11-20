@@ -1,4 +1,8 @@
-/*GLOBAL BADGE STYLES*/
+/* 
+-----------------------------------------------------------------
+Badges
+-----------------------------------------------------------------
+*/
 
 .badge-container {
 	margin-bottom: $container-margin-bottom;
@@ -64,7 +68,7 @@
 	&--sm {
 		@include badge-size(0.6rem, 1rem, 0.9rem);
 	}
-	
+
 	&--md {
 		@include badge-size(0.6rem, 1.5rem, 1.1rem);
 	}

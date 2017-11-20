@@ -1,117 +1,105 @@
-.caret {
-	display: inline-block;
-	width: 0;
-	height: 0;
-	margin-left: 2px;
-	vertical-align: middle;
-	border-top: 4px dashed;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-}
+/* 
+-----------------------------------------------------------------
+Dropdown
+-----------------------------------------------------------------
+*/
 
 .dropdown {
 	position: relative;
 
-	.dropdown-menu {
-		@include transform-translate-y(-25px);
-		visibility: hidden;
-		display: block;
-		@include opacity(0);
-	}
-}
-
-.dropdown-toggle:focus {
-	outline: 0;
-}
-
-.dropdown-menu {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	z-index: 1000;
-	display: none;
-	float: left;
-	min-width: 160px;
-	padding: 5px 0;
-	margin: 2px 0 0;
-	list-style: none;
-	font-size: 14px;
-	text-align: left;
-	background-color: #FFFFFF;
-	background-clip: padding-box;
-	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
-	border-radius: $border-radius-extra-small;
-	@include transition($fast-transition-time, $transition-linear);
-
-	&.dropdown-menu-right {
-		left: auto;
-		right: 0;
-
-		&:before {
-			left: auto;
-			right: 10px;
-		}
-	}
-
-	&:before {
+	&__caret {
 		display: inline-block;
-		position: absolute;
 		width: 0;
 		height: 0;
+		margin-left: 2px;
 		vertical-align: middle;
-		content: "";
-		top: -5px;
-		left: 10px;
-		right: auto;
-		color: $white-color;
-		border-bottom: 0.4em solid;
-		border-right: 0.4em solid transparent;
-		border-left: 0.4em solid transparent;
+		border-top: 4px dashed;
+		border-right: 4px solid transparent;
+		border-left: 4px solid transparent;
 	}
 
-	.dropdown-header:not([href]):not([tabindex]) {
-		color: $default-color-opacity;
-		font-size: $font-size-mini;
-		text-transform: uppercase;
-		font-weight: $font-weight-bold;
-		display: block;
-		padding: 6px 20px 3px 20px;
-	}
+	&__menu {	
+		visibility: hidden;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		float: left;
+		min-width: 16rem;
+		padding: 0.5rem 0;
+		margin: 0.2rem 0 0;
+		list-style: none;
+		background-color: #FFFFFF;
+		background-clip: padding-box;
+		box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.2);
+		@include transition($fast-transition-time, $transition-linear);
+		@include transform-translate-y(-25px);
+		@include opacity(0);
 
-	&.dropdown-primary {
-		@include dropdown-colors(darken($primary-color, 3%),$opacity-8,$white-color, $opacity-2);
-	}
+		&--right {
+			left: auto;
+			right: 0;
 
-	&.dropdown-info {
-		@include dropdown-colors(darken($info-color, 3%),$opacity-8,$white-color, $opacity-2);
-	}
+			&:before {
+				left: auto;
+				right: 10px;
+			}
+		}
 
-	&.dropdown-danger {
-		@include dropdown-colors(darken($danger-color, 3%),$opacity-8,$white-color, $opacity-2);
-	}
+		&:before {
+			display: inline-block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			vertical-align: middle;
+			content: "";
+			top: -5px;
+			left: 10px;
+			right: auto;
+			color: $white-color;
+			border-bottom: 0.4em solid;
+			border-right: 0.4em solid transparent;
+			border-left: 0.4em solid transparent;
+		}
 
-	&.dropdown-success {
-		@include dropdown-colors(darken($success-color, 3%),$opacity-8,$white-color, $opacity-2);
-	}
+		&__header:not([href]):not([tabindex]) {
+			color: $default-color-opacity;
+			font-size: $font-size-mini;
+			text-transform: uppercase;
+			font-weight: $font-weight-bold;
+			display: block;
+			padding: 6px 20px 3px 20px;
+		}
 
-	&.dropdown-warning {
-		@include dropdown-colors(darken($warning-color, 3%),$opacity-8,$white-color, $opacity-2);
-	}
+		&--toggle:focus {
+			outline: 0;
+		}
 
-	&.pull-right {
-		right: 0;
-		left: auto;
-	}
+		&__caret {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			margin-left: 2px;
+			vertical-align: middle;
+			border-top: 4px dashed;
+			border-right: 4px solid transparent;
+			border-left: 4px solid transparent;
+		}
 
-	& .divider {
-		height: 1px;
-		margin: 5px 0;
-		overflow: hidden;
-		background-color: #E5E5E5;
-	}
+		&.u-pull--right {
+			right: 0;
+			left: auto;
+		}
 
-	& > li {
-		& > a {
+		&__divider {
+			height: 1px;
+			margin: 5px 0;
+			overflow: hidden;
+			background-color: #E5E5E5;
+		}
+		
+		&__item > a {
 			display: block;
 			padding: 6px 20px;
 			clear: both;
@@ -127,27 +115,31 @@
 				background-color: #F5F5F5;
 			}
 		}
+
+		&__item--active {
+			& > a,
+			& > a:hover,
+			& > a:focus {
+				color: #FFFFFF;
+				text-decoration: none;
+				outline: 0;
+				background-color: #337AB7;
+			}
+		}
 	}
 
-	.dropdown.open & {
-		display: block;
-		@include opacity(1);
-		visibility: visible;
-		@include transform-translate-y(0);
-	}
+	&.open {
+		.dropdown__menu {
+			display: block;
+			@include opacity(1);
+			visibility: visible;
+			@include transform-translate-y(0);
 
-	& > .active > a,
-	& > .active > a:hover,
-	& > .active > a:focus {
-		color: #FFFFFF;
-		text-decoration: none;
-		outline: 0;
-		background-color: #337AB7;
+			& > a {
+				outline: 0;
+			}
+		}
 	}
-}
-
-.open > a {
-	outline: 0;
 }
 
 .dropdown-backdrop {
@@ -159,7 +151,7 @@
 	z-index: 990;
 }
 
-.pull-right > .dropdown-menu {
+.u-pull--right > .dropdown__menu {
 	right: 0;
 	left: auto;
 }
@@ -174,75 +166,6 @@
 		right: auto;
 	}
 }
-
-
-/*.dropdown-menu.pull-right {
-    right: 0;
-    left: auto;
-}
-
-.dropdown-menu .divider {
-    height: 1px;
-    margin: 5px 0;
-    overflow: hidden;
-    background-color: #e5e5e5;
-}
-
-.dropdown-menu > li > a {
-    display: block;
-    padding: 6px 20px;
-    clear: both;
-    font-weight: normal;
-    line-height: 1.42857143;
-    color: #333333;
-    white-space: nowrap;
-}*/
-
-/*.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-    text-decoration: none;
-    color: #262626;
-    background-color: #f5f5f5;
-}*/
-
-/*.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
-    color: #fff;
-    text-decoration: none;
-    outline: 0;
-    background-color: #337ab7;
-}*/
-
-/*.dropdown-menu > .disabled > a {
-    color: #777777;
-}
-
-.dropdown-menu > .disabled > a:hover,
-.dropdown-menu > .disabled > a:focus {
-  text-decoration: none;
-  background-color: transparent;
-  background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  cursor: not-allowed;
-  color: #777777;
-}*/
-
-
-
-
-/*.navbar-fixed-bottom .dropdown .caret {
-  border-top: 0;
-  border-bottom: 4px dashed;
-  border-bottom: 4px solid \9;
-  content: "";
-}
-
-.navbar-fixed-bottom .dropdown .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: 2px;
-}*/
 
 
 

@@ -29,6 +29,8 @@
                     <h4>Heading h4</h4>
                     <h5>Heading h5</h5>
                     <h6>Heading h6</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel tellus orci. Ut congue hendrerit sagittis. Morbi mi massa, feugiat eget felis ac, interdum posuere nibh. Pellentesque facilisis dolor at porttitor pulvinar. Phasellus faucibus tempus massa, sed maximus mauris efficitur quis <a href="#0">Click Here</a>.</p>
+                    <p>Nunc eu tincidunt neque. Aliquam erat volutpat. Duis dignissim eros felis, id malesuada erat placerat in. Phasellus congue nec neque commodo maximus. Nam mattis augue nunc, sit amet venenatis nisl ultrices a. Curabitur nec interdum nulla, nec venenatis sapien. Nam id ornare ante, sed sodales sem.</p>
                 </div>
             </div>
         </section>
@@ -231,21 +233,21 @@
                 <div class="row">
                     <div class="col--md-12">
                         <div class="checkbox-group">
-                            <div class="checkbox checkbox-inline">
+                            <div class="checkbox checkbox--inline">
                                 <input type="checkbox" id="check1">
-                                <label for="check1">Checkbox</label>
+                                <label for="check1" class="checkbox__label">Checkbox</label>
                             </div>
-                            <div class="checkbox checkbox-inline">
+                            <div class="checkbox checkbox--inline">
                                 <input type="checkbox" id="check2" checked="">
-                                <label for="check2">Checkbox Active</label>
+                                <label for="check2" class="checkbox__label">Checkbox Active</label>
                             </div>
-                            <div class="checkbox checkbox-inline">
+                            <div class="checkbox checkbox--inline">
                                 <input type="checkbox" id="check3" disabled="">
-                                <label for="check3">Checkbox Disabled</label>
+                                <label for="check3" class="checkbox__label">Checkbox Disabled</label>
                             </div>
-                            <div class="checkbox checkbox-inline">
+                            <div class="checkbox checkbox--inline">
                                 <input type="checkbox" id="check4" checked="" disabled="">
-                                <label for="check4">Checkbox Active and Disabled</label>
+                                <label for="check4" class="checkbox__label">Checkbox Active and Disabled</label>
                             </div>
                         </div>
                     </div>
@@ -253,21 +255,21 @@
                 <div class="row">
                     <div class="col--md-12">
                         <div class="radio-group">
-                            <div class="radio radio-inline">
+                            <div class="radio radio--inline">
                                 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                <label for="optionsRadios1">Radio Button</label>
+                                <label for="optionsRadios1" class="radio__label">Radio Button</label>
                             </div>
-                            <div class="radio radio-inline">
+                            <div class="radio radio--inline">
                                 <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <label for="optionsRadios2">Radio Active</label>
+                                <label for="optionsRadios2" class="radio__label">Radio Active</label>
                             </div>
-                            <div class="radio radio-inline">
+                            <div class="radio radio--inline">
                                 <input type="radio" name="optionsRadios-disabled" id="optionsRadios3" value="option3" disabled="">
-                                <label for="optionsRadios3">Radio Disabled</label>
+                                <label for="optionsRadios3" class="radio__label">Radio Disabled</label>
                             </div>
-                            <div class="radio radio-inline">
+                            <div class="radio radio--inline">
                                 <input type="radio" name="optionsRadios-disabled" id="optionsRadios4" value="option4" checked="" disabled="">
-                                <label for="optionsRadios4">Radio Active and Disabled</label>
+                                <label for="optionsRadios4" class="radio__label">Radio Active and Disabled</label>
                             </div>
                         </div>
                     </div>
@@ -303,10 +305,10 @@
                     </div>
                     <div class="card">
                         <form class="form">
-                            <div class="card-header">
-                                <h4 class="title title-up">Sign Up</h4>
+                            <div class="card__header">
+                                <h4>Sign Up</h4>
                             </div>
-                            <div class="card-body">
+                            <div class="card__body">
                                 <div class="input-group form-group-no-border">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons users_circle-08"></i>
@@ -326,7 +328,7 @@
                                     <input type="text" class="form-control" placeholder="Email...">
                                 </div>
                             </div>
-                            <div class="card-footer">
+                            <div class="card__footer">
                                 <a href="#0" class="btn btn--sm">Get Started</a>
                             </div>
                         </form>
@@ -349,24 +351,24 @@
                     <div class="dropdown">
                         <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown trigger
-                            <span class="caret"></span>
+                            <span class="dropdown__caret"></span>
                         </button>
 
-                        <ul class="dropdown-menu " aria-labelledby="dLabel"> 
-                            <li><span class="dropdown-header">Dropdown header</span></li>
-                            <li><a href="#">Action</a></li> 
-                            <li><a href="#">Another action</a></li> 
-                            <li><a href="#">Something else here</a></li> 
-                            <li role="separator" class="divider"></li> 
-                            <li><a href="#">Separated link</a></li> 
+                        <ul class="dropdown__menu" aria-labelledby="dLabel"> 
+                            <li class="dropdown__menu__header">Dropdown header</li>
+                            <li class="dropdown__menu__item"><a href="#">Action</a></li> 
+                            <li class="dropdown__menu__item"><a href="#">Another action</a></li> 
+                            <li class="dropdown__menu__item dropdown__menu__item--active"><a href="#">Active Item</a></li> 
+                            <li role="separator" class="dropdown__menu__divider"></li> 
+                            <li class="dropdown__menu__item"><a href="#">Separated link</a></li> 
                         </ul>
                     </div>
 
                 </div>
             </div>
         </section>
-
-        <!-- ****************** Cards ****************** --> 
+        
+        <!-- ****************** Navbar ****************** --> 
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
             <div class="row">
                 <div class="col--md-12">
@@ -390,36 +392,36 @@
                             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Link</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">One more separated link</a></li>
+                                <a href="#" class="dropdown--toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item dropdown__menu__item--active"><a href="#">Action</a></li>
+                                    <li class="dropdown__menu__item"><a href="#">Another action</a></li>
+                                    <li class="dropdown__menu__item"><a href="#">Something else here</a></li>
+                                    <li role="separator" class="dropdown__menu__divider"></li>
+                                    <li class="dropdown__menu__item"><a href="#">Separated link</a></li>
+                                    <li role="separator" class="dropdown__menu__divider"></li>
+                                    <li class="dropdown__menu__item"><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Link</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
+                                <a href="#" class="dropdown--toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown__menu">
+                                    <li class="dropdown__menu__item"><a href="#">Action</a></li>
+                                    <li class="dropdown__menu__item"><a href="#">Another action</a></li>
+                                    <li class="dropdown__menu__item"><a href="#">Something else here</a></li>
+                                    <li role="separator" class="dropdown__menu__divider"></li>
+                                    <li class="dropdown__menu__item"><a href="#">Separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
-
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
         </section>
+
     
         <!-- ****************** Modals ****************** --> 
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
