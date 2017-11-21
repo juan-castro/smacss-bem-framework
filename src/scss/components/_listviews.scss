@@ -1,3 +1,5 @@
+/* Redo in Flexbox ?? */
+
 .list-view {
 	display: table;
 	width: 100%;
@@ -66,53 +68,4 @@
 .list-view.list-light .list-header {
 	background: #F2F2F2;
 	color: #434343;
-}
-
-/* Mobile List View */
-.m-list-view {
-	background: #FFFFFF;
-	border: 1px solid #DDDDDD;
-	width: 100%;
-}
-
-.m-list-row {
-	display: flex;
-	border-bottom: 1px solid #DDDDDD;
-	padding: 10px;
-}
-
-.m-list-row:last-child {
-	border-bottom: 0 none;
-}
-
-.m-list-checkbox {
-	flex: 0 0 25px;
-	align-self: center;
-	height: 22px;
-}
-
-.m-list-image {
-	flex: 0 0 96px;
-	margin-right: 10px;
-}
-
-.m-no-checkbox .m-list-image {
-	margin-left: 25px;
-}
-
-.m-list-data {
-	flex-grow: 1;
-	min-width: 0;
-}
-
-.m-list-data li {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-
-.m-list-arrow {
-	flex: 0 0 20px;
-	margin-left: 10px;
-	align-self: center;
 }

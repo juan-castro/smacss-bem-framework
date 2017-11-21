@@ -153,56 +153,56 @@
                     <h2>Inputs</h2>
                 </div>
             </div>
-            <form>
+            <form class="form">
                 <div class="row">
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleInputEmail">Email Address <span class="required">*</span></label>
-                            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                        <div class="form__item">
+                            <label class="form__label" for="exampleInputEmail">Email Address <span class="is-required">*</span></label>
+                            <input type="email" class="form__control" id="exampleInputEmail" placeholder="Email">
                         </div>
                     </div>
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleInputPassword">Password <span class="required">*</span></label>
-                            <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                        <div class="form__item">
+                            <label class="form__label" for="exampleInputPassword">Password <span class="required">*</span></label>
+                            <input type="password" class="form__control" id="exampleInputPassword" placeholder="Password">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleText">Text Input (Not Required)</label>
-                            <input type="text" class="form-control" id="exampleText" placeholder="Some general text...">
+                        <div class="form__item">
+                            <label class="form__label" for="exampleText">Text Input (Not Required)</label>
+                            <input type="text" class="form__control" id="exampleText" placeholder="Some general text...">
                         </div>
                     </div>
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="disabledInput">Input Disabled</label>
-                            <input class="form-control" id="disabledInput" type="text" placeholder="Read only text..." disabled>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="errorInput">Validation Error</label>
-                            <input type="text" class="form-control error" id="errorInput" placeholder="Some general text...">
-                            <span class="error-message">Something's not right here.</span>
-                        </div>
-                    </div>
-                    <div class="col--md-6">
-                        <label for="exampleInputGroup">Input Group - Input Add On</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">$</div>
-                            <input type="text" id="exampleInputGroup" class="form-control">
+                        <div class="form__item">
+                            <label class="form__label" for="disabledInput">Input Disabled</label>
+                            <input class="form__control" id="disabledInput" type="text" placeholder="Read only text..." disabled>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleSelect1">Select Box</label>
-                            <select id="exampleSelect1" placeholder="Select One" class="form-control" disabled>
+                        <div class="form__item">
+                            <label class="form__label" for="errorInput">Validation Error</label>
+                            <input type="text" class="form__control has-error" id="errorInput" placeholder="Some general text...">
+                            <span class="form__error-message">Something's not right here.</span>
+                        </div>
+                    </div>
+                    <div class="col--md-6">
+                        <label class="form__label" for="exampleInputGroup">Input Group - Input Add On</label>
+                        <div class="form__group">
+                            <div class="form__addon">$</div>
+                            <input type="text" id="exampleInputGroup" class="form__control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col--md-6">
+                        <div class="form__item">
+                            <label class="form__label" for="exampleSelect1">Select Box</label>
+                            <select id="exampleSelect1" placeholder="Select One" class="form__control" disabled>
                                 <option>Option One</option>
                                 <option>Option Two</option>
                                 <option>Option Three</option>
@@ -211,9 +211,9 @@
                         </div>
                     </div>
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleSelect2">Select Box</label>
-                            <select id="exampleSelect2" placeholder="Select One" class="form-control">
+                        <div class="form__item">
+                            <label class="form__label" for="exampleSelect2">Select Box</label>
+                            <select id="exampleSelect2" placeholder="Select One" class="form__control">
                                 <option>Option One</option>
                                 <option>Option Two</option>
                                 <option>Option Three</option>
@@ -224,9 +224,9 @@
                 </div>
                 <div class="row">
                     <div class="col--md-6">
-                        <div class="form-group">
-                            <label for="exampleTextArea">Text Area</label>
-                            <textarea class="form-control" id="exampleTextArea" rows="3" placeholder="A place for lots of text..."></textarea>
+                        <div class="form__item">
+                            <label class="form__label" for="exampleTextArea">Text Area</label>
+                            <textarea class="form__control form__textarea" id="exampleTextArea" rows="3" placeholder="A place for lots of text..."></textarea>
                         </div>
                     </div>
                 </div>
@@ -234,19 +234,19 @@
                     <div class="col--md-12">
                         <div class="checkbox-group">
                             <div class="checkbox checkbox--inline">
-                                <input type="checkbox" id="check1">
+                                <input type="checkbox" class="checkbox__input" id="check1">
                                 <label for="check1" class="checkbox__label">Checkbox</label>
                             </div>
                             <div class="checkbox checkbox--inline">
-                                <input type="checkbox" id="check2" checked="">
+                                <input type="checkbox" class="checkbox__input" id="check2" checked="">
                                 <label for="check2" class="checkbox__label">Checkbox Active</label>
                             </div>
                             <div class="checkbox checkbox--inline">
-                                <input type="checkbox" id="check3" disabled="">
+                                <input type="checkbox" class="checkbox__input" id="check3" disabled="">
                                 <label for="check3" class="checkbox__label">Checkbox Disabled</label>
                             </div>
                             <div class="checkbox checkbox--inline">
-                                <input type="checkbox" id="check4" checked="" disabled="">
+                                <input type="checkbox" class="checkbox__input" id="check4" checked="" disabled="">
                                 <label for="check4" class="checkbox__label">Checkbox Active and Disabled</label>
                             </div>
                         </div>
@@ -256,19 +256,19 @@
                     <div class="col--md-12">
                         <div class="radio-group">
                             <div class="radio radio--inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
                                 <label for="optionsRadios1" class="radio__label">Radio Button</label>
                             </div>
                             <div class="radio radio--inline">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios2" value="option2">
                                 <label for="optionsRadios2" class="radio__label">Radio Active</label>
                             </div>
                             <div class="radio radio--inline">
-                                <input type="radio" name="optionsRadios-disabled" id="optionsRadios3" value="option3" disabled="">
+                                <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios3" value="option3" disabled="">
                                 <label for="optionsRadios3" class="radio__label">Radio Disabled</label>
                             </div>
                             <div class="radio radio--inline">
-                                <input type="radio" name="optionsRadios-disabled" id="optionsRadios4" value="option4" checked="" disabled="">
+                                <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios4" value="option4" checked="" disabled="">
                                 <label for="optionsRadios4" class="radio__label">Radio Active and Disabled</label>
                             </div>
                         </div>
@@ -313,19 +313,19 @@
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons users_circle-08"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="First Name...">
+                                    <input type="text" class="form__control" placeholder="First Name...">
                                 </div>
                                 <div class="input-group form-group-no-border">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons text_caps-small"></i>
                                     </span>
-                                    <input type="text" placeholder="Last Name..." class="form-control">
+                                    <input type="text" placeholder="Last Name..." class="form__control">
                                 </div>
                                 <div class="input-group form-group-no-border">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons ui-1_email-85"></i>
                                     </span>
-                                    <input type="text" class="form-control" placeholder="Email...">
+                                    <input type="text" class="form__control" placeholder="Email...">
                                 </div>
                             </div>
                             <div class="card__footer">
@@ -353,14 +353,13 @@
                             Dropdown trigger
                             <span class="dropdown__caret"></span>
                         </button>
-
                         <ul class="dropdown__menu" aria-labelledby="dLabel"> 
-                            <li class="dropdown__menu__header">Dropdown header</li>
-                            <li class="dropdown__menu__item"><a href="#">Action</a></li> 
-                            <li class="dropdown__menu__item"><a href="#">Another action</a></li> 
-                            <li class="dropdown__menu__item dropdown__menu__item--active"><a href="#">Active Item</a></li> 
-                            <li role="separator" class="dropdown__menu__divider"></li> 
-                            <li class="dropdown__menu__item"><a href="#">Separated link</a></li> 
+                            <li class="dropdown__header">Dropdown header</li>
+                            <li class="dropdown__item"><a href="#">Action</a></li> 
+                            <li class="dropdown__item"><a href="#">Another action</a></li> 
+                            <li class="dropdown__item is-active"><a href="#">Active Item</a></li> 
+                            <li class="dropdown__divider" role="separator"></li> 
+                            <li class="dropdown__item"><a href="#">Separated link</a></li> 
                         </ul>
                     </div>
 
@@ -392,28 +391,28 @@
                             <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
                             <li><a href="#">Link</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown--toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <a href="#" class="dropdown__toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__menu__item dropdown__menu__item--active"><a href="#">Action</a></li>
-                                    <li class="dropdown__menu__item"><a href="#">Another action</a></li>
-                                    <li class="dropdown__menu__item"><a href="#">Something else here</a></li>
-                                    <li role="separator" class="dropdown__menu__divider"></li>
-                                    <li class="dropdown__menu__item"><a href="#">Separated link</a></li>
-                                    <li role="separator" class="dropdown__menu__divider"></li>
-                                    <li class="dropdown__menu__item"><a href="#">One more separated link</a></li>
+                                    <li class="dropdown__item is-active"><a href="#">Action</a></li>
+                                    <li class="dropdown__item"><a href="#">Another action</a></li>
+                                    <li class="dropdown__item"><a href="#">Something else here</a></li>
+                                    <li role="separator" class="dropdown__divider"></li>
+                                    <li class="dropdown__item"><a href="#">Separated link</a></li>
+                                    <li role="separator" class="dropdown__divider"></li>
+                                    <li class="dropdown__item"><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#">Link</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown--toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <a href="#" class="dropdown__toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                 <ul class="dropdown__menu">
-                                    <li class="dropdown__menu__item"><a href="#">Action</a></li>
-                                    <li class="dropdown__menu__item"><a href="#">Another action</a></li>
-                                    <li class="dropdown__menu__item"><a href="#">Something else here</a></li>
-                                    <li role="separator" class="dropdown__menu__divider"></li>
-                                    <li class="dropdown__menu__item"><a href="#">Separated link</a></li>
+                                    <li class="dropdown__item"><a href="#">Action</a></li>
+                                    <li class="dropdown__item"><a href="#">Another action</a></li>
+                                    <li class="dropdown__item"><a href="#">Something else here</a></li>
+                                    <li class="dropdown__divider" role="separator"></li>
+                                    <li class="dropdown__item"><a href="#">Separated link</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -422,7 +421,6 @@
             </nav>
         </section>
 
-    
         <!-- ****************** Modals ****************** --> 
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
             <div class="row">
@@ -441,6 +439,34 @@
             </div>
         </section>
 
+        <!-- ****************** Loaders ****************** --> 
+        <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
+            <div class="row">
+                <div class="col--md-12">
+                    <h2>Loaders</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col--md-12">
+                    <div class="loader loader--linear" style="position: relative">
+                        <div class="loader__bar"></div>
+                    </div>
+                    <div class="loader loader--circle">
+                        <svg class="loader__shape" viewBox="25 25 50 50">
+                            <circle class="loader__path" cx="50" cy="50" r="20" fill="none" stroke="#C90107" stroke-width="3"></circle>
+                        </svg>
+                    </div>
+                    <button class="btn btn--primary btn--md btn--loader">
+                        <div class="loader loader--circle">
+                            <svg class="loader__shape" viewBox="25 25 50 50">
+                                <circle class="loader__path" cx="50" cy="50" r="20" fill="none" stroke="#fff" stroke-width="7"></circle>
+                            </svg>
+                        </div>
+                        <span>Button Loader</span>
+                    </button>
+                </div>
+            </div>
+        </section>
 
         <!-- ****************** Data Tables ****************** --> 
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
@@ -600,20 +626,20 @@
     </div>
 
     <!-- ****************** Small Modal ****************** --> 
-    <div class="modal fade in" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+    <div class="modal modal--fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal">
+        <div class="modal__dialog modal--sm" role="document">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__title">Modal title</h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal__body">
                     <p>Well, I guess that's it. Parting thoughts of which I have two. First: as I said I'll handle the legacy costs out of my end so you won't have to worry about my guys anymore. Second: the bug. The DEA will do a sweep can't say when, could be any time. But you need to get it out of there sooner rather than later. Alright. Just get the bug, Walter.</p>
                 </div>
-                <div class="modal-footer">
-                    <div class="btn-container u-pull-left">
+                <div class="modal__footer">
+                    <div class="btn-container u-pull--left">
                         <button type="button" class="btn btn--md btn--link btn-no-shadow" data-dismiss="modal">Cancel</button>
                     </div>
-                    <div class="btn-container u-pull-right">
+                    <div class="btn-container u-pull--right">
                         <button type="button" class="btn btn--md btn--primary btn-no-shadow">Save changes</button>
                     </div>
                 </div>
@@ -622,20 +648,20 @@
     </div>
 
     <!-- ****************** Medium Modal ****************** --> 
-    <div class="modal fade in" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModal">
-        <div class="modal-dialog modal-md" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+    <div class="modal modal--fade" id="mediumModal" tabindex="-1" role="dialog" aria-labelledby="mediumModal">
+        <div class="modal__dialog modal--md" role="document">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__title">Modal title</h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal__body">
                     <p>Well, I guess that's it. Parting thoughts of which I have two. First: as I said I'll handle the legacy costs out of my end so you won't have to worry about my guys anymore. Second: the bug. The DEA will do a sweep can't say when, could be any time. But you need to get it out of there sooner rather than later. Alright. Just get the bug, Walter.</p>
                 </div>
-                <div class="modal-footer">
-                    <div class="btn-container u-pull-left">
+                <div class="modal__footer">
+                    <div class="btn-container u-pull--left">
                         <button type="button" class="btn btn--md btn--cancel btn-no-shadow" data-dismiss="modal">Cancel</button>
                     </div>
-                    <div class="btn-container u-pull-right">
+                    <div class="btn-container u-pull--right">
                         <button type="button" class="btn btn--md btn--primary btn-no-shadow">Save changes</button>
                     </div>
                 </div>
@@ -644,20 +670,20 @@
     </div>
 
     <!-- ****************** Medium Left Modal ****************** --> 
-    <div class="modal fade left" id="leftModal" tabindex="-1" role="dialog" aria-labelledby="leftModal">
-        <div class="modal-dialog modal-md" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="myModalLabel">Modal title</h3>
+    <div class="modal modal--fade modal--left" id="leftModal" tabindex="-1" role="dialog" aria-labelledby="leftModal">
+        <div class="modal__dialog modal--md" role="document">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__title">Modal title</h3>
                 </div>
-                <div class="modal-body">
+                <div class="modal__body">
                     <p>Well, I guess that's it. Parting thoughts of which I have two. First: as I said I'll handle the legacy costs out of my end so you won't have to worry about my guys anymore. Second: the bug. The DEA will do a sweep can't say when, could be any time. But you need to get it out of there sooner rather than later. Alright. Just get the bug, Walter.</p>
                 </div>
-                <div class="modal-footer">
-                    <div class="btn-container pull-left">
+                <div class="modal__footer">
+                    <div class="btn-container u-pull--left">
                         <button type="button" class="btn btn--md btn--cancel btn-no-shadow" data-dismiss="modal">Cancel</button>
                     </div>
-                    <div class="btn-container pull-right">
+                    <div class="btn-container u-pull--right">
                         <button type="button" class="btn btn--md btn--primary btn-no-shadow">Save changes</button>
                     </div>
                 </div>
@@ -672,6 +698,7 @@
 
     <script type="text/javascript">
         $(function () {
+            // Intialize tooltips and popovers
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
         });

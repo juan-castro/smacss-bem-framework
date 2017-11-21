@@ -63,60 +63,56 @@ Dropdown
 			border-left: 0.4em solid transparent;
 		}
 
-		&__header:not([href]):not([tabindex]) {
-			color: $default-color-opacity;
-			font-size: $font-size-mini;
-			text-transform: uppercase;
-			font-weight: $font-weight-bold;
-			display: block;
-			padding: 6px 20px 3px 20px;
-		}
-
-		&--toggle:focus {
-			outline: 0;
-		}
-
-		&__caret {
-			display: inline-block;
-			width: 0;
-			height: 0;
-			margin-left: 2px;
-			vertical-align: middle;
-			border-top: 4px dashed;
-			border-right: 4px solid transparent;
-			border-left: 4px solid transparent;
-		}
-
 		&.u-pull--right {
 			right: 0;
 			left: auto;
 		}
+	}
 
-		&__divider {
-			height: 1px;
-			margin: 5px 0;
-			overflow: hidden;
-			background-color: #E5E5E5;
+	&__header:not([href]):not([tabindex]) {
+		color: $default-color-opacity;
+		font-size: $font-size-mini;
+		text-transform: uppercase;
+		font-weight: $font-weight-bold;
+		display: block;
+		padding: 6px 20px 3px 20px;
+	}
+
+	&__caret {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		margin-left: 2px;
+		vertical-align: middle;
+		border-top: 4px dashed;
+		border-right: 4px solid transparent;
+		border-left: 4px solid transparent;
+	}
+
+	&__divider {
+		height: 1px;
+		margin: 5px 0;
+		overflow: hidden;
+		background-color: #E5E5E5;
+	}
+	
+	&__item > a {
+		display: block;
+		padding: 6px 20px;
+		clear: both;
+		font-weight: normal;
+		line-height: 1.42857143;
+		color: #333333;
+		white-space: nowrap;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: #262626;
+			background-color: #F5F5F5;
 		}
-		
-		&__item > a {
-			display: block;
-			padding: 6px 20px;
-			clear: both;
-			font-weight: normal;
-			line-height: 1.42857143;
-			color: #333333;
-			white-space: nowrap;
 
-			&:hover,
-			&:focus {
-				text-decoration: none;
-				color: #262626;
-				background-color: #F5F5F5;
-			}
-		}
-
-		&__item--active {
+		&.is-active {
 			& > a,
 			& > a:hover,
 			& > a:focus {
@@ -125,6 +121,12 @@ Dropdown
 				outline: 0;
 				background-color: #337AB7;
 			}
+		}
+	}
+
+	&__toggle {
+		&:focus {
+			outline: 0;
 		}
 	}
 
