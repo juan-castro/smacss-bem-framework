@@ -75,17 +75,11 @@ Form Inputs
 			border: 1px solid #C6C9CC;
 			box-shadow: none;
 			color: #95989C;
-			cursor: default;
+			cursor: not-allowed;
 			@include opacity(0.8);
 		}
 	}
 
-	/* Textarea */
-
-	&__textarea {
-		height: auto;
-	}
-	
 	/* Validation Error */ 
 
 	&__error-message {
@@ -123,16 +117,26 @@ Form Inputs
 
 				&:hover {
 					border-color: #87898C;
-					background: #F3F8FC;
+					background-color: #F3F8FC;
 				}
 
 				&:focus {
 					border-color: $iaa-blue;
 					box-shadow: 0 0 1px rgba(0, 0, 0, 0.075) inset;
 					outline: 0 none;
-					background: #F3F8FC;
+					background-color: #F3F8FC;
 				}
 			}
 		}
 	}	
 }
+
+/* Textarea */
+
+textarea.form__control {
+	height: auto;
+}
+
+
+
+
