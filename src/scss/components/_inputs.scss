@@ -38,6 +38,7 @@ Form Inputs
 		width: 100%;
 		padding: 0.5rem 1rem;
 		font-size: $font-size-base;
+		text-align: left;
 		line-height: $line-height;
 		color: $iaa-black;
 		background-color: $white-color;
@@ -50,14 +51,14 @@ Form Inputs
 
 		&:hover {
 			border-color: $iaa-dark-gray;
-			background: #F3F8FC;
+			background-color: #F3F8FC;
 		}
 
 		&:focus {
 			border-color: $iaa-blue;
 			box-shadow: 0 0 1px rgba(0, 0, 0, 0.075) inset;
 			outline: 0 none;
-			background: #F3F8FC;
+			background-color: #F3F8FC;
 		}
 
 		&::-ms-clear {

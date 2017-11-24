@@ -1,4 +1,3 @@
-
 /* 
 -----------------------------------------------------------------
 Button Container
@@ -22,7 +21,6 @@ Button Container
 	}
 }
 
-
 /* 
 -----------------------------------------------------------------
 Button Styles
@@ -36,7 +34,6 @@ Button Styles
 	border: none;
 	cursor: pointer;
 	display: inline-block;
-	transition: all 0.2s ease;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	box-shadow: 0 4px 6px rgba(50,50,93,0.11), 0 1px 3px rgba(0,0,0,0.08);
@@ -44,6 +41,7 @@ Button Styles
 	-webkit-font-smoothing: antialiased;
 	backface-visibility: hidden;
 	transform: translateZ(0);
+	@include transition(0.2s, ease);
 	@include btn-styles($default-color, $default-states-color);
 
 	&:hover,
@@ -96,7 +94,7 @@ Button Styles
 		@include btn-styles($iaa-blue, darken($iaa-blue, 5%));
 	}
 
-	/* Button Size */
+	/* Button Sizes */
 	&--lg {
 		@include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $border-radius-large);
 	}
@@ -106,6 +104,10 @@ Button Styles
 	}
 
 	&--sm {
+		@include btn-size(8px, 18px, 1.1rem, $border-radius-small);
+	}
+
+	&--xs {
 		@include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-xsmall, $border-radius-small);
 	}
 }

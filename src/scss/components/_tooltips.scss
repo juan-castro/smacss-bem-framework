@@ -1,4 +1,8 @@
-/*TOOLTIP STYLES*/
+/* 
+-----------------------------------------------------------------
+Tooltips
+-----------------------------------------------------------------
+*/
 
 .tooltip-inner {
 	max-width: 200px;
@@ -60,6 +64,14 @@
 	&.right {
 		padding: 0 0.5rem;
 		margin-left: 0.5rem;
+
+		.tooltip-arrow {
+			top: 50%;
+			left: 0;
+			margin-top: -5px;
+			border-width: 5px 5px 5px 0;
+			border-right-color: #000000;
+		}
 	}
 
 	&.bottom {
@@ -82,7 +94,7 @@
 		.tooltip-arrow {
 			top: 50%;
 			right: 0;
-			margin-top: -5px;
+			margin-top: -0.5rem;
 			border-width: 5px 0 5px 5px;
 			border-left-color: #000000;
 		}
@@ -129,8 +141,11 @@
 	}
 }
 
-
-/*POPOVER STYLES*/
+/* 
+-----------------------------------------------------------------
+Popovers
+-----------------------------------------------------------------
+*/
 
 .popover {
 	position: absolute;
@@ -265,6 +280,7 @@
 	border-bottom: 1px solid #EBEBEB;
 	border-radius: 4px 4px 0 0;
 }
+
 .popover-content {
 	padding: 1rem 1.5rem;
 }

@@ -1,3 +1,9 @@
+/* 
+-----------------------------------------------------------------
+Pagination
+-----------------------------------------------------------------
+*/
+
 .pagination {
 	padding: 1rem;
 	border: 1px solid #CCCCCC;
@@ -6,7 +12,7 @@
 	overflow: hidden;
 	height: 5.2rem;
 
-	.pages {
+	&__pages {
 		border: 1px solid #CCCCCC;
 		background: #FFFFFF;
 		display: inline-block;
@@ -18,24 +24,24 @@
 			fill: #1D67B2;
 			top: 0.1rem;
 		}
+	}
 
-		button {
-			width: 3rem;
-			height: 3rem;
-			text-align: center;
-			color: #1D67B2;
-			border-right: 1px solid #CCCCCC;
-			display: block;
-			float: left;
-			overflow: hidden;
-			padding: 0;
+	&__btn {
+		width: 3rem;
+		height: 3rem;
+		text-align: center;
+		color: #1D67B2;
+		border-right: 1px solid #CCCCCC;
+		display: block;
+		float: left;
+		overflow: hidden;
+		padding: 0;
 
-			&:last-of-type {
-				border: none;
-			}
+		&:last-of-type {
+			border: none;
 		}
 
-		.active {
+		&.is-active {
 			color: #434343;
 			background: #F4F4F4;
 		}
@@ -46,19 +52,18 @@
 		height: 1.2rem;
 	}
 
-	.btn-secondary {
-		border-color: #CCCCCC;
-		font-size: 1.4rem;
-	}
-
-	.pull-left .icon {
+	.u-pull--left .icon {
 		float: left;
 		margin-right: 0.5rem;
 	}
 
-	.pull-right .icon {
+	.u-pull--right .icon {
 		float: right;
 		margin-left: 0.5rem;
 	}
 }
+
+
+
+
 

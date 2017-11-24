@@ -1,23 +1,30 @@
-/*TAB STYLES*/
+/* 
+-----------------------------------------------------------------
+Tabs
+-----------------------------------------------------------------
+*/
 
-.nav-tabs {
-	position: relative;
-	z-index: 1;
+.tabs {
 
-	&:after {
-		display: table;
-		clear: both;
-		content: "";
+	/* Tabs Navigation */
+
+	&__nav {
+		position: relative;
+		z-index: 1;
+
+		&:after {
+			display: table;
+			clear: both;
+			content: "";
+		}
 	}
+	
+	/* Tabs Navigation - Links */
 
-	& > li {
+	&__link {
 		border: 1px solid #DDDDDD;
 		width: 100%;
 		margin-bottom: -1px;
-
-		&:last-child {
-			border-right: 1px solid #DDDDDD;
-		}
 
 		&.active {
 			border-bottom: 1px solid #FFFFFF;
@@ -25,6 +32,13 @@
 			a {
 				color: #333333;
 				border-top: 3px solid #C90107;
+
+				&,
+				&:hover,
+				&:focus {
+					cursor: default;
+					background-color: #FFFFFF;
+				}
 			}
 		}
 
@@ -41,27 +55,42 @@
 			overflow: hidden;
 			text-overflow: ellipsis;
 
-
 			&:hover {
 				text-decoration: none;
 			}
+
+			&:last-child {
+				border-right: 1px solid #DDDDDD;
+			}
+		}
+	}
+
+	/* Tabs Content */
+
+	&__content {
+		padding: 2rem;
+		border: 1px solid #DDDDDD;
+		z-index: 0;
+	}
+
+	&__pane {
+		display: none;
+
+		&.active {
+			display: block;
 		}
 	}
 }
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-	cursor: default;
-	background-color: #FFFFFF;
-}
-
 
 @media only screen and (min-width : 768px) {
-	.nav-tabs {
-		display: flex;
+	.tabs {
 
-		& > li {
+		&__nav {
+			display: flex;
+		}
+
+		&__link {
 			margin-bottom: -1px;
 			border-right: none;
 			width: auto;
@@ -74,17 +103,7 @@
 	}
 }
 
-.tab-content {
-	padding: 2rem;
-	border: 1px solid #DDDDDD;
-	z-index: 0;
 
-	& > .tab-pane {
-		display: none;
-	}
 
-	& > .active {
-		display: block;
-	}
-}
+
 

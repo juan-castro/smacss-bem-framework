@@ -1,102 +1,89 @@
-/* Toggle Control Styles */
+/* 
+-----------------------------------------------------------------
+Switch Control
+-----------------------------------------------------------------
+*/
 
-.toggle-group {
+.switch {
 	margin-bottom: $margin-b-lg;
 
-	.toggle-label {
+	&__text {
 		vertical-align: top;
 		display: inline-block;
 		margin: 1px 8px 0 0;
 	}
-}
 
-input[type="checkbox"].form-toggle {
-	& + label {
-		display: inline-block;
-		position: relative;
-		cursor: pointer;
-		outline: none;
-		-webkit-user-select: none;
-		   -moz-user-select: none;
-		    -ms-user-select: none;
-		        user-select: none;
-		padding: 0.2rem;
-		width: 4rem;
-		height: 2.2rem;
-		background-color: #DDDDDD;
-		border-radius: 6rem;
-		margin: 0;
+	&__input {
+		display: none;
 
-		&:before, &:after {
-			display: block;
-			position: absolute;
-			top: 0.1rem;
-			left: 0.1rem;
-			bottom: 0.1rem;
-			content: "";
-		}
-
-		&:before {
-			right: 1px;
-			background: #F1F1F1;
+		& + .switch__label {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			outline: none;
+			-webkit-user-select: none;
+			   -moz-user-select: none;
+			    -ms-user-select: none;
+			        user-select: none;
+			padding: 0.2rem;
+			width: 4rem;
+			height: 2.2rem;
+			background-color: #DDDDDD;
 			border-radius: 6rem;
-			transition: background 0.15s ease;
-			border: 0 none;
+			margin: 0;
+
+			&:before, &:after {
+				display: block;
+				position: absolute;
+				top: 0.1rem;
+				left: 0.1rem;
+				bottom: 0.1rem;
+				content: "";
+			}
+
+			&:before {
+				right: 1px;
+				background: #F1F1F1;
+				border-radius: 6rem;
+				transition: background 0.15s ease;
+				border: 0 none;
+			}
+
+			&:after {
+				width: 2rem;
+				height: 2rem;
+				background: $white-color;
+				border-radius: 100%;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+				transition: margin 0.15s ease;
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+		
+		/* Animate the ON/OFF state  */
+		&:checked {
+			& + .switch__label {
+				background-color: #238723;
+
+				&:before {
+					width: auto;
+					height: auto;
+					background-color: #238723;
+				}
+
+				&:after {
+					margin-left: 1.8rem;
+				}
+			}
 		}
 
-		&:after {
-			width: 2rem;
-			height: 2rem;
-			background: #FFFFFF;
-			border-radius: 100%;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-			transition: margin 0.15s ease;
-			opacity: 1;
-			transform: scale(1);
+		&:not(:checked) + .switch__label:before {
+			width: auto;
+			height: auto;
 		}
 	}
 }
 
 
-input[type="checkbox"].form-toggle:checked + label, 
-input[type="checkbox"].form-toggle:checked + label:before {
-	background-color: #238723;
-}
-input[type="checkbox"].form-toggle:checked + label:after {
-	margin-left: 1.8rem;
-}
-input[type="checkbox"].form-toggle:not(:checked) + label:before,
-input[type="checkbox"].form-toggle:checked + label:before {
-	width: auto;
-	height: auto;
-}
-
-/*input[type="checkbox"].form-toggle + label:before, 
-input[type="checkbox"].form-toggle + label:after {
-    display: block;
-    position: absolute;
-    top: .1rem;
-    left: .1rem;
-    bottom: .1rem;
-    content: "";
-}
-
-input[type="checkbox"].form-toggle + label:before {
-    right: 1px;
-    background: #f1f1f1;
-    border-radius: 6rem;
-    transition: background 0.15s ease;
-    border: 0 none;
-}
-
-input[type="checkbox"].form-toggle + label:after {
-    width: 2rem;
-    height:2rem;
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    transition: margin 0.15s ease;
-    opacity: 1;
-    transform: scale(1);
-}*/
 

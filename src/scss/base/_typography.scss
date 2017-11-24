@@ -41,12 +41,6 @@ h6, .h6 {
 	font-weight: $font-weight-bold;
 }
 
-ul, li {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-}
-
 p {
 	font-size: $font-paragraph;
 	line-height: line-height-paragraph;
@@ -67,3 +61,54 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+/* List Styles */
+
+ul, ol {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+.list--nested,
+.list--unordered,
+.list--ordered {
+	margin-left: 2rem;
+	line-height: 1.5;
+}
+
+.list--unordered,
+.list--ordered {
+	padding: 0 1rem;
+	margin-bottom: 1.5rem;
+
+	& > .list__item {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.list__item {
+	padding-left: 0.25rem;
+}
+
+.list--unordered > .list__item {
+	list-style-type: disc;
+}
+
+.list--ordered > .list__item {
+	list-style-type: decimal;
+}
+
+.list--nested {
+	margin-left: 1.5rem;
+}
+
+.list--nested > .list__item {
+	list-style-type: none;
+}
+
+.list--nested > .list__item:before {
+	content: '-';	
+	padding-right: 0.25rem;
+}
+

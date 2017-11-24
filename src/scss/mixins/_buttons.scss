@@ -1,12 +1,12 @@
 /* Mixin for generating new styles */
 @mixin btn-styles($btn-color, $btn-states-color) {
 	background-color: $btn-color;
-	box-shadow: 0 1.5px 0 darken($btn-color, 10%),
+	box-shadow: 0 2px 0 darken($btn-color, 10%),
 	inset 0 1px 0 rgba(255, 255, 255, 0.3),
 	0 2px 8px rgba(0, 0, 0, 0.4);
 
-	&.btn-no-shadow {
-		box-shadow: 0 1.5px 0 darken($btn-color, 10%),
+	&.btn--no-shadow {
+		box-shadow: 0 2px 0 darken($btn-color, 10%),
 		inset 0 1px 0 rgba(255, 255, 255, 0.3);
 	}
 
@@ -41,7 +41,6 @@
 		}
 	}
 
-
 	/*// btn-neutral style*/
 	@if $btn-color == $white-color {
 		color: $primary-color;
@@ -66,7 +65,6 @@
 	} @else {
 		color: $white-color;
 	}
-
 
 	&.btn--link {
 		color: $iaa-blue;
