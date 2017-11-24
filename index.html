@@ -91,14 +91,14 @@
         </section>
 
         <!-- ****************** Alerts ****************** -->
-       <!--  <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
+        <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
             <div class="row">
                 <div class="col--md-12">
                     <h2>Alerts</h2>
                 </div>
-            </div> -->
-            <!-- <div class="row"> -->
-                <!-- <div class="col--md-12"> -->
+            </div>
+            <div class="row">
+                <div class="col--md-12">
                     <div class="alert alert--success fade in">
                         <p class="alert__message">This is a success alert</p>
                         <button type="button" class="alert__btn-close" data-dismiss="alert" arial-label="close">
@@ -117,9 +117,9 @@
                             X
                         </button>
                     </div>
-                <!-- </div> -->
-            <!-- </div> -->
-        <!-- </section> -->
+                </div>
+            </div>
+        </section>
 
         <!-- ****************** Badges ****************** -->        
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
@@ -166,13 +166,13 @@
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleInputEmail">Email Address <span class="is-required">*</span></label>
-                            <input type="email" class="form__control" id="exampleInputEmail" placeholder="Email">
+                            <input type="email" class="form__control form__control--md" id="exampleInputEmail" placeholder="Email">
                         </div>
                     </div>
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleInputPassword">Password <span class="required">*</span></label>
-                            <input type="password" class="form__control" id="exampleInputPassword" placeholder="Password">
+                            <input type="password" class="form__control form__control--md" id="exampleInputPassword" placeholder="Password">
                         </div>
                     </div>
                 </div>
@@ -180,29 +180,29 @@
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleText">Text Input (Not Required)</label>
-                            <input type="text" class="form__control" id="exampleText" placeholder="Some general text...">
+                            <input type="text" class="form__control form__control--md" id="exampleText" placeholder="Some general text...">
                         </div>
                     </div>
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="disabledInput">Input Disabled</label>
-                            <input class="form__control" id="disabledInput" type="text" placeholder="Read only text..." disabled>
+                            <input class="form__control form__control--md" id="disabledInput" type="text" placeholder="Read only text..." disabled>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col--md-6">
-                        <div class="form__item">
-                            <label class="form__label" for="errorInput">Validation Error</label>
-                            <input type="text" class="form__control has-error" id="errorInput" placeholder="Some general text...">
-                            <span class="form__error-message">Something's not right here.</span>
+                        <label class="form__label" for="exampleInputGroup">Input Group - Input Add On</label>
+                        <div class="form__group">
+                            <div class="form__addon">@</div>
+                            <input type="text" id="exampleInputGroup" class="form__control form__control--md">
                         </div>
                     </div>
                     <div class="col--md-6">
-                        <label class="form__label" for="exampleInputGroup">Input Group - Input Add On</label>
-                        <div class="form__group">
-                            <div class="form__addon">$</div>
-                            <input type="text" id="exampleInputGroup" class="form__control">
+                        <div class="form__item">
+                            <label class="form__label" for="errorInput">Validation Error</label>
+                            <input type="text" class="form__control form__control--md has-error" id="errorInput" placeholder="Some general text...">
+                            <span class="form__error-message">Something's not right here.</span>
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,7 @@
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleSelect1">Select Box</label>
-                            <select id="exampleSelect1" placeholder="Select One" class="form__control" disabled>
+                            <select id="exampleSelect1" placeholder="Select One" class="form__control form__control--md">
                                 <option>Option One</option>
                                 <option>Option Two</option>
                                 <option>Option Three</option>
@@ -221,7 +221,7 @@
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleSelect2">Select Box</label>
-                            <select id="exampleSelect2" placeholder="Select One" class="form__control">
+                            <select id="exampleSelect2" placeholder="Select One" class="form__control form__control--md" disabled>
                                 <option>Option One</option>
                                 <option>Option Two</option>
                                 <option>Option Three</option>
@@ -234,92 +234,207 @@
                     <div class="col--md-6">
                         <div class="form__item">
                             <label class="form__label" for="exampleTextArea">Text Area</label>
-                            <textarea class="form__control" id="exampleTextArea" rows="3" placeholder="A place for lots of text..."></textarea>
+                            <textarea class="form__control form__control--md" id="exampleTextArea" rows="3" placeholder="A place for lots of text..."></textarea>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col--md-6">
+                        <label class="form__label">Filter By</label>
                         <div class="form__group">
-                            <select class="form__control">
+                            <select class="form__control form__control--md">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                             </select>
-                            <select class="form__control">
+                            <select class="form__control form__control--md">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                             </select>
-                            <select class="form__control">
+                            <select class="form__control form__control--md">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                             </select>
-                            <select class="form__control">
+                            <select class="form__control form__control--md">
                                 <option>Option 1</option>
                                 <option>Option 2</option>
                             </select>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col--md-12">
-                        <div class="checkbox-group">
-                            <div class="checkbox checkbox--inline">
-                                <input type="checkbox" class="checkbox__input" id="check1">
-                                <label for="check1" class="checkbox__label">Checkbox</label>
+                
+                <!-- Input Sizes -->
+                <section>                    
+                    <div class="row">
+                        <div class="col--md-12">
+                            <h6>Input Sizes</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--md-5">
+                            <div class="form__group">
+                                <div class="form__addon">@</div>
+                                <input type="text" class="form__control form__control--xs" id="input-xs" placeholder="Text Input - xs">
                             </div>
-                            <div class="checkbox checkbox--inline">
-                                <input type="checkbox" class="checkbox__input" id="check2" checked="">
-                                <label for="check2" class="checkbox__label">Checkbox Active</label>
+                        </div>
+                        <div class="col--md-5">
+                            <select id="select-xs" placeholder="Select One" class="form__control form__control--xs">
+                                <option>Option One</option>
+                                <option>Option Two</option>
+                                <option>Option Three</option>
+                                <option>Option Four</option>
+                            </select>
+                        </div>
+                        <div class="col--md-2">
+                            <button class="btn btn--xs btn--iaa btn--block btn--no-shadow">Button XS</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--md-5">
+                            <div class="form__group">
+                                <div class="form__addon">@</div>
+                                <input type="text" class="form__control form__control--sm" id="input-sm" placeholder="Text Input - sm">
                             </div>
-                            <div class="checkbox checkbox--inline">
-                                <input type="checkbox" class="checkbox__input" id="check3" disabled="">
-                                <label for="check3" class="checkbox__label">Checkbox Disabled</label>
+                        </div>
+                        <div class="col--md-5">
+                            <select id="select-sm" placeholder="Select One" class="form__control form__control--sm">
+                                <option>Option One</option>
+                                <option>Option Two</option>
+                                <option>Option Three</option>
+                                <option>Option Four</option>
+                            </select>
+                        </div>
+                        <div class="col--md-2">
+                            <button class="btn btn--sm btn--iaa btn--block btn--no-shadow">Button SM</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--md-5">
+                            <div class="form__group">
+                                <div class="form__addon">@</div>
+                                <input type="text" class="form__control form__control--md" id="input-md" placeholder="Text Input - md">
                             </div>
-                            <div class="checkbox checkbox--inline">
-                                <input type="checkbox" class="checkbox__input" id="check4" checked="" disabled="">
-                                <label for="check4" class="checkbox__label">Checkbox Active and Disabled</label>
+                        </div>
+                        <div class="col--md-5">
+                            <select id="select-md" placeholder="Select One" class="form__control form__control--md">
+                                <option>Option One</option>
+                                <option>Option Two</option>
+                                <option>Option Three</option>
+                                <option>Option Four</option>
+                            </select>
+                        </div>
+                        <div class="col--md-2">
+                            <button class="btn btn--md btn--iaa btn--block btn--no-shadow">Button MD</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--md-5">
+                            <div class="form__group">
+                                <div class="form__addon">@</div>
+                                <input type="text" class="form__control form__control--lg" id="input-lg" placeholder="Text Input - lg">
+                            </div>
+                        </div>
+                        <div class="col--md-5">
+                            <select id="select-lg" placeholder="Select One" class="form__control form__control--lg">
+                                <option>Option One</option>
+                                <option>Option Two</option>
+                                <option>Option Three</option>
+                                <option>Option Four</option>
+                            </select>
+                        </div>
+                        <div class="col--md-2">
+                            <button class="btn btn--lg btn--iaa btn--block btn--no-shadow">Button LG</button>                            
+                        </div>
+                    </div>
+                </section>
+                <!-- Input Sizes -->
+                
+                <!-- Checkboxes -->
+                <section>
+                    <div class="row">
+                        <div class="col--md-12">
+                            <h6>Checkboxes</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col--md-12">
+                            <div class="checkbox-group">
+                                <div class="checkbox checkbox--inline">
+                                    <input type="checkbox" class="checkbox__input" id="check1">
+                                    <label for="check1" class="checkbox__label">Checkbox</label>
+                                </div>
+                                <div class="checkbox checkbox--inline">
+                                    <input type="checkbox" class="checkbox__input" id="check2" checked="">
+                                    <label for="check2" class="checkbox__label">Checkbox Active</label>
+                                </div>
+                                <div class="checkbox checkbox--inline">
+                                    <input type="checkbox" class="checkbox__input" id="check3" disabled="">
+                                    <label for="check3" class="checkbox__label">Checkbox Disabled</label>
+                                </div>
+                                <div class="checkbox checkbox--inline">
+                                    <input type="checkbox" class="checkbox__input" id="check4" checked="" disabled="">
+                                    <label for="check4" class="checkbox__label">Checkbox Active and Disabled</label>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col--md-12">
-                        <div class="radio-group">
-                            <div class="radio radio--inline">
-                                <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
-                                <label for="optionsRadios1" class="radio__label">Radio Button</label>
-                            </div>
-                            <div class="radio radio--inline">
-                                <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <label for="optionsRadios2" class="radio__label">Radio Active</label>
-                            </div>
-                            <div class="radio radio--inline">
-                                <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios3" value="option3" disabled="">
-                                <label for="optionsRadios3" class="radio__label">Radio Disabled</label>
-                            </div>
-                            <div class="radio radio--inline">
-                                <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios4" value="option4" checked="" disabled="">
-                                <label for="optionsRadios4" class="radio__label">Radio Active and Disabled</label>
-                            </div>
+                </section>
+                <!-- Checkboxes -->
+                
+                <!-- Radio -->
+                <section>
+                    <div class="row">
+                        <div class="col--md-12">
+                            <h6>Radio</h6>
                         </div>
                     </div>
-                </div>    
-                <div class="row">
-                    <div class="col--md-6">
-                        <div class="switch">
-                            <span class="switch__text">Do you like toggle switches?</span>
-                            <input class="switch__input" id="toggle-1" type="checkbox">
-                            <label class="switch__label"for="toggle-1"></label>
+                    <div class="row">
+                        <div class="col--md-12">
+                            <div class="radio-group">
+                                <div class="radio radio--inline">
+                                    <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                    <label for="optionsRadios1" class="radio__label">Radio Button</label>
+                                </div>
+                                <div class="radio radio--inline">
+                                    <input type="radio" class="radio__input" name="optionsRadios" id="optionsRadios2" value="option2">
+                                    <label for="optionsRadios2" class="radio__label">Radio Active</label>
+                                </div>
+                                <div class="radio radio--inline">
+                                    <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios3" value="option3" disabled="">
+                                    <label for="optionsRadios3" class="radio__label">Radio Disabled</label>
+                                </div>
+                                <div class="radio radio--inline">
+                                    <input type="radio" class="radio__input" name="optionsRadios-disabled" id="optionsRadios4" value="option4" checked="" disabled="">
+                                    <label for="optionsRadios4" class="radio__label">Radio Active and Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </section> 
+                <!-- Radio -->
+                
+                <!-- Switch -->
+                <section>
+                    <div class="row">
+                        <div class="col--md-12">
+                            <h6>Switch</h6>
                         </div>
                     </div>
-                    <div class="col--md-6">
-                        <div class="switch">
-                            <span class="switch__text">Notifications</span>
-                            <input class="switch__input" id="toggle-2" type="checkbox">
-                            <label class="switch__label" for="toggle-2"></label>
+                    <div class="row">
+                        <div class="col--md-6">
+                            <div class="switch">
+                                <span class="switch__text">Do you like toggle switches?</span>
+                                <input class="switch__input" id="toggle-1" type="checkbox">
+                                <label class="switch__label"for="toggle-1"></label>
+                            </div>
                         </div>
-                    </div>
-                </div>            
+                        <div class="col--md-6">
+                            <div class="switch">
+                                <span class="switch__text">Notifications</span>
+                                <input class="switch__input" id="toggle-2" type="checkbox">
+                                <label class="switch__label" for="toggle-2"></label>
+                            </div>
+                        </div>
+                    </div>     
+                </section>
+                <!-- Switch -->       
                 
             </form>
         </section>      
@@ -343,19 +458,19 @@
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons users_circle-08"></i>
                                     </span>
-                                    <input type="text" class="form__control" placeholder="First Name...">
+                                    <input type="text" class="form__control form__control--md" placeholder="First Name...">
                                 </div>
                                 <div class="input-group form-group-no-border">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons text_caps-small"></i>
                                     </span>
-                                    <input type="text" placeholder="Last Name..." class="form__control">
+                                    <input type="text" placeholder="Last Name..." class="form__control form__control--md">
                                 </div>
                                 <div class="input-group form-group-no-border">
                                     <span class="input-group-addon">
                                         <i class="now-ui-icons ui-1_email-85"></i>
                                     </span>
-                                    <input type="text" class="form__control" placeholder="Email...">
+                                    <input type="text" class="form__control form__control--md" placeholder="Email...">
                                 </div>
                             </div>
                             <div class="card__footer">
@@ -377,7 +492,7 @@
             </div>
             <div class="row">
                 <div class="col--md-6">
-                    <div class="dropdown dropdown--select">
+                    <div class="dropdown dropdown--select dropdown--md">
                         <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Select Option
                         </button>
@@ -393,11 +508,11 @@
                 </div>
                 <div class="col--md-6">
                     <div class="dropdown">
-                        <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button id="dLabel2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown trigger
                             <span class="dropdown__caret"></span>
                         </button>
-                        <ul class="dropdown__menu" aria-labelledby="dLabel"> 
+                        <ul class="dropdown__menu" aria-labelledby="dLabel2"> 
                             <li class="dropdown__header">Dropdown header</li>
                             <li class="dropdown__item"><a href="#0">Action</a></li> 
                             <li class="dropdown__item"><a href="#0">Another action</a></li> 
@@ -534,35 +649,35 @@
                             <tr>
                                 <td>789-00010273</td>
                                 <td>1997 Honda Civic</td>
-                                <td><span class="badge badge-sd badge-sm badge-green" status="Paid">Paid</span></td>
+                                <td><span class="badge badge--sd badge--sm badge--green" status="Paid">Paid</span></td>
                                 <td>Michael Duve</td>
                                 <td>$3,432.00</td>
                             </tr>
                             <tr>
                                 <td>789-00010273</td>
                                 <td>1997 Honda Civic</td>
-                                <td><span class="badge badge-sd badge-sm badge-red" status="Unpaid">Unpaid</span></td>
+                                <td><span class="badge badge--sd badge--sm badge--red" status="Unpaid">Unpaid</span></td>
                                 <td>Michael Duve</td>
                                 <td>$3,432.00</td>
                             </tr>
                             <tr>
                                 <td>789-00010273</td>
                                 <td>1997 Honda Civic</td>
-                                <td><span class="badge badge-sd badge-sm badge-green" status="Paid">Paid</span></td>
+                                <td><span class="badge badge--sd badge--sm badge--green" status="Paid">Paid</span></td>
                                 <td>Michael Duve</td>
                                 <td>$3,432.00</td>
                             </tr>
                             <tr>
                                 <td>789-00010273</td>
                                 <td>1997 Honda Civic</td>
-                                <td><span class="badge badge-sd badge-sm badge-yellow" status="Pending">Pending</span></td>
+                                <td><span class="badge badge--sd badge--sm badge--yellow" status="Pending">Pending</span></td>
                                 <td>Michael Duve</td>
                                 <td>$3,432.00</td>
                             </tr>
                             <tr>
                                 <td>789-00010273</td>
                                 <td>1997 Honda Civic</td>
-                                <td><span class="badge badge-sd badge-sm badge-red" status="Unpaid">Unpaid</span></td>
+                                <td><span class="badge badge--sd badge--sm badge--red" status="Unpaid">Unpaid</span></td>
                                 <td>Michael Duve</td>
                                 <td>$3,432.00</td>
                             </tr>

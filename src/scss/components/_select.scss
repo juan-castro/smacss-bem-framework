@@ -14,7 +14,7 @@ select.form__control:focus,
 	cursor: pointer;
 	background: #FFFFFF url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' width='30px' height='30px' preserveAspectRatio='xMinYMid' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.414'%3E%3Cpath d='M19.73 12.35c-.4-.4-.9-.4-1.35 0l-3.4 3.25-3.35-3.25c-.45-.4-.998-.4-1.348 0-.4.4-.35 1.05 0 1.4.35.35 4.05 3.9 4.05 3.9.2.2.45.3.7.3.25 0 .5-.1.7-.3 0 0 3.7-3.5 4.05-3.9.3-.35.3-1-.05-1.4z' fill='%23444' fill-rule='nonzero'/%3E%3C/svg%3E") no-repeat right center;
 	outline: 0 none;
-	
+
 	&[disabled] {
 		background-color: #F1F1F3;
 		border: 1px solid #C6C9CC;

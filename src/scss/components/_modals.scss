@@ -122,7 +122,8 @@ Modals
 
 /* Bootstrap JS Classes */
 
-.modal-open { /* Removes body scrollbar when modal is open */
+.modal-open {
+	/* Removes body scrollbar when modal is open */
 	overflow: hidden;
 
 	& .modal {

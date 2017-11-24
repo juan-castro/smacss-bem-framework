@@ -1,10 +1,13 @@
-//Utilities
-@import "mixins/transparency";
-@import "mixins/clearfix";
+/* 1. Utilities */
+@import 
+	"mixins/transparency",
+	"mixins/clearfix";
 
-//Components
-@import "mixins/buttons";
-@import "mixins/vendor-prefixes";
-@import "mixins/badges";
-@import "mixins/dropdown";
+/* 2. Components */
+@import 
+	"mixins/buttons",
+	"mixins/vendor-prefixes",
+	"mixins/badges",
+	"mixins/dropdown",
+	"mixins/inputs";
 

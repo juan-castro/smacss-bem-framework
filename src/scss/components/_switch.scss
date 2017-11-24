@@ -60,7 +60,7 @@ Switch Control
 				transform: scale(1);
 			}
 		}
-		
+
 		/* Animate the ON/OFF state  */
 		&:checked {
 			& + .switch__label {

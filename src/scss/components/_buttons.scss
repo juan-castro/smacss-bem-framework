@@ -77,6 +77,10 @@ Button Styles
 		line-height: normal;
 	}
 
+	&--block {
+		width: 100%;
+	}
+
 	/* Button Color */
 	&--default {
 		@include btn-styles($default-color, $default-states-color);
@@ -104,7 +108,7 @@ Button Styles
 	}
 
 	&--sm {
-		@include btn-size(8px, 18px, 1.1rem, $border-radius-small);
+		@include btn-size(0.8rem, 1.8rem, 1.1rem, $border-radius-small);
 	}
 
 	&--xs {

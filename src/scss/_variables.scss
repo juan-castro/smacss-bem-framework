@@ -5,11 +5,11 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
-//== Buttons
+/*//== Buttons
 //
-//## For each of Bootstrap's buttons, define text, background and border color.
+//## For each of Bootstrap's buttons, define text, background and border color.*/
 
-$white-color: #FFFFFF !default;
+/*$white-color: #FFFFFF !default;
 $white-bg: #FFFFFF !default;
 $orange-bg: #E95E38 !default;
 $smoke-bg: #F5F5F5 !default;
@@ -50,7 +50,7 @@ $warning-color-alert: rgba(255, 178, 54, 0.8) !default;
 $danger-color: #FF3636 !default;
 $danger-states-color: darken($danger-color, 5%) !default;
 $danger-color-opacity: rgba(255, 54, 54, 0.3) !default;
-$danger-color-alert: rgba(255, 54, 54, 0.8) !default;
+$danger-color-alert: rgba(255, 54, 54, 0.8) !default;*/
 
 /*     brand Colors              */
 /*$brand-primary: $primary-color !default;
@@ -78,12 +78,10 @@ $padding-base-horizontal: 0.7rem !default;
 $padding-round-horizontal: 23px !default;
 $padding-simple-vertical: 10px !default;
 $padding-simple-horizontal: 17px !default;
-
 $padding-large-vertical: 15px !default;
 $padding-large-horizontal: 48px !default;
 $padding-small-vertical: 5px !default;
 $padding-small-horizontal: 15px !default;
-
 $padding-xs-vertical: 1px !default;
 $padding-xs-horizontal: 5px !default;
 $padding-label-vertical: 2px !default;
@@ -204,12 +202,13 @@ $font-size-h6: 1.4rem       !default;
 $font-paragraph: 1.4rem       !default;
 $font-size-navbar: 1.4rem       !default;
 $font-size-mini: 0.7142em     !default;
+$font-size-xlarge: 1.8rem       !default;
 $font-size-large: 1.6rem       !default;
 $font-size-base: 1.4rem       !default;
 $font-size-small: 1.2rem       !default;
 $font-size-xsmall: 1rem       !default;
 $font-size-large-navbar: 2rem         !default;
-$font-size-blockquote: 1.1em        !default; // ~ 15px
+$font-size-blockquote: 1.1em        !default;
 
 $font-weight-light: 300         !default;
 $font-weight-normal: 400         !default;
@@ -222,11 +221,11 @@ $line-height: 1.5            !default;
 $line-height-paragraph: 1.4            !default;
 $line-height-sm: 1              !default;
 $line-height-lg: 54px           !default;
-$margin-b-xs: 5px            !default;
-$margin-b-sm: 10px           !default;
-$margin-b-md: 15px           !default;
-$margin-b-lg: 20px           !default;
-$margin-b-xl: 25px           !default;
+$margin-b-xs: 0.5rem            !default;
+$margin-b-sm: 1rem           !default;
+$margin-b-md: 1.5rem           !default;
+$margin-b-lg: 2rem           !default;
+$margin-b-xl: 2.5rem           !default;
 $border: 1px solid   !default;
 $border-radius-extra-small: 0.125rem    !default;
 $border-radius-small: 0.1875rem   !default;

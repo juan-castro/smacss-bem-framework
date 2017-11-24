@@ -5,7 +5,6 @@ Tabs
 */
 
 .tabs {
-
 	/* Tabs Navigation */
 
 	&__nav {
@@ -18,7 +17,7 @@ Tabs
 			content: "";
 		}
 	}
-	
+
 	/* Tabs Navigation - Links */
 
 	&__link {
@@ -85,7 +84,6 @@ Tabs
 
 @media only screen and (min-width : 768px) {
 	.tabs {
-
 		&__nav {
 			display: flex;
 		}

@@ -1,0 +1,6 @@
+/* Sizes Mixin */
+@mixin input-size($padding-vertical, $font-size) {
+	font-size: $font-size;
+	padding-top: $padding-vertical;
+	padding-bottom: $padding-vertical;
+}

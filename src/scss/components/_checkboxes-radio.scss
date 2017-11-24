@@ -95,7 +95,7 @@ Checkbox
 				}
 			}
 		}
-		
+
 		&:disabled {
 			&:checked + label:after {
 				background: #999999;
@@ -208,7 +208,6 @@ Radio
 		&:checked + label:after {
 			@extend %input-c-r-checked-label-after;
 		}
-
 	}
 }
 
