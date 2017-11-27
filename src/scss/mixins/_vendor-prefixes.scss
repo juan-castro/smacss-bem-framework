@@ -11,13 +11,19 @@
 	        transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-
 @mixin transition($time, $type) {
 	-webkit-transition: all $time $type;
 	   -moz-transition: all $time $type;
 	     -o-transition: all $time $type;
 	    -ms-transition: all $time $type;
 	        transition: all $time $type;
+}
+
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
 }
 
 @mixin rotate-180() {
@@ -51,6 +57,23 @@
 	-webkit-animation-fill-mode: forwards;
 	   -moz-animation-fill-mode: forwards;
 	        animation-fill-mode: forwards;
+}
+
+@mixin perspective($perspective) {
+  -webkit-perspective: $perspective;
+     -moz-perspective: $perspective;
+          perspective: $perspective;
+}
+
+@mixin backface-visibility($visibility) {
+  -webkit-backface-visibility: $visibility;
+     -moz-backface-visibility: $visibility;
+          backface-visibility: $visibility;
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
 }
 
 @mixin topbar-x-rotation() {

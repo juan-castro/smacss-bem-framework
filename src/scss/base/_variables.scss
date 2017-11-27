@@ -5,11 +5,11 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
-//== Buttons
+/*//== Buttons
 //
-//## For each of Bootstrap's buttons, define text, background and border color.
+//## For each of Bootstrap's buttons, define text, background and border color.*/
 
-$white-color: #FFFFFF !default;
+/*$white-color: #FFFFFF !default;
 $white-bg: #FFFFFF !default;
 $orange-bg: #E95E38 !default;
 $smoke-bg: #F5F5F5 !default;
@@ -26,18 +26,11 @@ $datepicker-color-days: rgba(255,255,255, 0.8)  !default;
 $datepicker-color-old-new-days: rgba(255,255,255, 0.4)  !default;
 $opacity-1: rgba(255,255,255, 0.1) !default;
 $opacity-2: rgba(255,255,255, 0.2) !default;
-$transparent-bg: transparent !default;
+
 $dark-background: #555555 !default;
-$default-color: #B8B8B8 !default;
-$default-states-color: darken($default-color, 5%) !default;
-$default-color-opacity: rgba(182, 182, 182, 0.6) !default;
-$primary-color: #F96332 !default;
-$primary-states-color: darken($primary-color, 5%) !default;
-$primary-color-opacity: rgba(249, 99, 50, 0.3) !default;
-$primary-color-alert: rgba(249, 99, 50, 0.8) !default;
-$success-color: #18CE0F !default;
-$success-states-color: darken($success-color, 5%) !default;
-$success-color-opacity: rgba(24, 206, 15, 0.3) !default;
+
+
+
 $success-color-alert: rgba(24, 206, 15, 0.8) !default;
 $info-color: #2CA8FF !default;
 $info-states-color: #109CFF !default;
@@ -50,23 +43,23 @@ $warning-color-alert: rgba(255, 178, 54, 0.8) !default;
 $danger-color: #FF3636 !default;
 $danger-states-color: darken($danger-color, 5%) !default;
 $danger-color-opacity: rgba(255, 54, 54, 0.3) !default;
-$danger-color-alert: rgba(255, 54, 54, 0.8) !default;
+$danger-color-alert: rgba(255, 54, 54, 0.8) !default;*/
 
 /*     brand Colors              */
-$brand-primary: $primary-color !default;
+/*$brand-primary: $primary-color !default;
 $brand-info: $info-color !default;
 $brand-success: $success-color !default;
 $brand-warning: $warning-color !default;
 $brand-danger: $danger-color !default;
-$link-disabled-color: #666666 !default;
+$link-disabled-color: #666666 !default;*/
 
 /*      light colors         */
-$light-blue: rgba($primary-color, 0.2);
+/*$light-blue: rgba($primary-color, 0.2);
 $light-azure: rgba($info-color, 0.2);
 $light-green: rgba($success-color, 0.2);
 $light-orange: rgba($warning-color, 0.2);
 $light-red: rgba($danger-color, 0.2);
-
+*/
 /* Components */
 
 $padding-input-vertical: 11px !default;
@@ -141,24 +134,26 @@ $topbar-back: topbar-back !default;
 $bottombar-x: bottombar-x !default;
 $bottombar-back: bottombar-back !default;
 
-//Nucleo Icons
 
-$nc-font-path: "../fonts" !default;
+/*//Nucleo Icons*/
+/*$nc-font-path: "../fonts" !default;
 $nc-font-size-base: 14px !default;
 $nc-css-prefix: now-ui !default;
 $nc-background-color: #EEEEEE !default;
 $nc-li-width: (30em / 14) !default;
-$nc-padding-width: (1em/3) !default;
+$nc-padding-width: (1em/3) !default;*/
 
-// Social icons color
-$social-twitter: #55ACEE !default;
+/*// Social icons color*/
+/*$social-twitter: #55ACEE !default;
 $social-twitter-state-color: darken(#55ACEE, 5%) !default;
 $social-facebook: #3B5998 !default;
 $social-facebook-state-color: darken(#3B5998, 5%) !default;
 $social-google: #DD4B39 !default;
 $social-google-state-color: darken(#DD4B39, 5%) !default;
 $social-linkedin: #0077B5 !default;
-$social-linkedin-state-color: darken(#0077B5, 5%) !default;
+$social-linkedin-state-color: darken(#0077B5, 5%) !default;*/
+
+
 
 /* 
 -----------------------------------------------------------------
@@ -187,6 +182,15 @@ $none: 0   !default;
 $border-thin: 1px !default;
 $border-thick: 2px !default;
 
+$primary-color: #F96332 !default;
+$primary-states-color: darken($primary-color, 5%) !default;
+$success-color: #18CE0F !default;
+$success-states-color: darken($success-color, 5%) !default;
+$default-color: #B8B8B8 !default;
+$default-states-color: darken($default-color, 5%) !default;
+$default-color-opacity: rgba(182, 182, 182, 0.6) !default;
+$transparent-bg: transparent !default;
+
 /* Typography */
 
 $sans-serif-family: "Open Sans", "Helvetica Neue",  arial, sans-serif;
@@ -200,12 +204,13 @@ $font-size-h6: 1.4rem       !default;
 $font-paragraph: 1.4rem       !default;
 $font-size-navbar: 1.4rem       !default;
 $font-size-mini: 0.7142em     !default;
+$font-size-xlarge: 1.8rem       !default;
 $font-size-large: 1.6rem       !default;
 $font-size-base: 1.4rem       !default;
 $font-size-small: 1.2rem       !default;
 $font-size-xsmall: 1rem       !default;
 $font-size-large-navbar: 2rem         !default;
-$font-size-blockquote: 1.1em        !default; // ~ 15px
+$font-size-blockquote: 1.1em        !default;
 
 $font-weight-light: 300         !default;
 $font-weight-normal: 400         !default;
@@ -218,11 +223,11 @@ $line-height: 1.5            !default;
 $line-height-paragraph: 1.4            !default;
 $line-height-sm: 1              !default;
 $line-height-lg: 54px           !default;
-$margin-b-xs: 5px            !default;
-$margin-b-sm: 10px           !default;
-$margin-b-md: 15px           !default;
-$margin-b-lg: 20px           !default;
-$margin-b-xl: 25px           !default;
+$margin-b-xs: 0.5rem            !default;
+$margin-b-sm: 1rem           !default;
+$margin-b-md: 1.5rem           !default;
+$margin-b-lg: 2rem           !default;
+$margin-b-xl: 2.5rem           !default;
 $border: 1px solid   !default;
 $border-radius-extra-small: 0.125rem    !default;
 $border-radius-small: 0.1875rem   !default;
@@ -230,5 +235,19 @@ $border-radius-large: 0.25rem     !default;
 $border-radius-extreme: 0.875rem    !default;
 $border-radius-large-top: $border-radius-large $border-radius-large 0 0 !default;
 $border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large !default;
+
+/* Breakpoints */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+
+
+
 
 
