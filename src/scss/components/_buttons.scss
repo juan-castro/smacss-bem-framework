@@ -98,7 +98,12 @@ Button Styles
 		@include btn-styles($iaa-blue, darken($iaa-blue, 5%));
 	}
 
+	&--pink {
+		@include btn-styles(pink, darken(pink, 5%));
+	}
+
 	/* Button Sizes */
+
 	&--lg {
 		@include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $border-radius-large);
 	}
