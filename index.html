@@ -11,11 +11,19 @@
     <!-- CSS Files -->
     <link href="build/css/styles.css" rel="stylesheet" />
 
-    <!-- CSS Just for demo purpose, don't include it in your project -->
-    <!-- <link href="./assets/css/demo.css" rel="stylesheet" /> -->
+    <style type="text/css">
+        /* Demo styles */
+        .box-row {
+            height: 3rem;
+            background: rgba(41, 75, 105, 0.1);
+            margin-bottom: 1rem;
+            border: 1px solid #6f9dc7;
+        }
+    </style>
+
 </head>
 <body>
-    <div class="grid--fixed">
+    <div class="wrapper container-fluid">
 
         <!-- ****************** Typography ****************** -->
         <section style="margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid #ccc;">
@@ -53,6 +61,21 @@
                         <li class="list__item">Unordered List level 1</li>
                         <li class="list__item">Unordered List level 1</li>
                     </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ****************** Grid ****************** -->
+        <section>
+            <div class="row">
+                <div class="col--xs-12 col--sm-3 col--md-2 col--lg-1">
+                    <div class="box-row"></div>
+                </div>
+                <div class="col--xs-6 col--sm-6 col--md-8 col--lg-10">
+                    <div class="box-row"></div>
+                </div>
+                <div class="col--xs-6 col--sm-3 col--md-2 col--lg-1">
+                    <div class="box-row"></div>
                 </div>
             </div>
         </section>
