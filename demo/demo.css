@@ -1,0 +1,16 @@
+ /* Demo styles */
+
+.section {
+	margin-bottom: 30px; 
+	padding-bottom: 30px; 
+	border-bottom: 1px solid #ccc;
+}
+
+.box-row {
+	height: 3rem;
+	background: rgba(41, 75, 105, 0.1); 
+	margin-bottom: 1rem; 
+	border: 1px solid #6f9dc7; 
+	text-align: center; 
+	font-weight: 600;
+}

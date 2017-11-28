@@ -7,7 +7,7 @@ Navbar
 .navbar {
 	position: relative;
 	display: flex;
-	flex-wrap: wrap; 
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0.5rem 1rem;
@@ -19,7 +19,7 @@ Navbar
 		align-items: center;
 		justify-content: space-between;
 	}
-	
+
 	/* Brand/Logo */
 
 	&__brand {
@@ -55,7 +55,7 @@ Navbar
 			float: none;
 		}
 	}
-	
+
 	&__text {
 		display: inline-block;
 		padding-top: 0.5rem;
@@ -104,19 +104,19 @@ Navbar
 
 		&#{$infix} {
 			@include media-breakpoint-down($breakpoint) {
-		    	> .container,
-		    	> .container-fluid {
-		      		padding-right: 0;
-		      		padding-left: 0;
-		    	}
+				> .container,
+				> .container-fluid {
+					padding-right: 0;
+					padding-left: 0;
+				}
 			}
 
 			@include media-breakpoint-up($next) {
-		    	flex-flow: row nowrap;
-		    	justify-content: flex-start;
+				flex-flow: row nowrap;
+				justify-content: flex-start;
 
-		    	.navbar__nav {
-		      		flex-direction: row;
+				.navbar__nav {
+					flex-direction: row;
 
 					.dropdown__menu {
 						position: absolute;
@@ -131,28 +131,28 @@ Navbar
 						padding-right: 1rem;
 						padding-left: 1rem;
 					}
-		    	}
+				}
 
-			    & > .container,
-			    & > .container-fluid {
-			    	flex-wrap: nowrap;
-			    }
+				& > .container,
+				& > .container-fluid {
+					flex-wrap: nowrap;
+				}
 
-			    .navbar__collapse {
-				    display: flex !important;
-				    flex-basis: auto;
-			    }
+				.navbar__collapse {
+					display: flex !important;
+					flex-basis: auto;
+				}
 
-			    .navbar__toggler {
-			    	display: none;
-			    }
+				.navbar__toggler {
+					display: none;
+				}
 
-			    .dropup {
-				    .dropdown__menu {
-					    top: auto;
-					    bottom: 100%;
-				    }
-			    }
+				.dropup {
+					.dropdown__menu {
+						top: auto;
+						bottom: 100%;
+					}
+				}
 			}
 		}
 	}
@@ -161,7 +161,7 @@ Navbar
 /* Light Navbar */
 
 .navbar--light {
-	background: #f8f9fa;
+	background: #F8F9FA;
 
 	.navbar__brand {
 		color: rgba(0, 0, 0, 0.9);
@@ -196,7 +196,7 @@ Navbar
 
 	.navbar__toggler {
 		color: rgba(0, 0, 0, 0.5);
-  		border-color: rgba(0, 0, 0, 0.1);
+		border-color: rgba(0, 0, 0, 0.1);
 	}
 
 	.navbar__toggler-icon {
@@ -220,14 +220,14 @@ Navbar
 /* Dark Navbar */
 
 .navbar--dark {
-	background: #343a40;
+	background: #343A40;
 
 	.navbar__brand {
-		color: #fff;
+		color: #FFFFFF;
 
 		&:hover,
 		&:focus {
-			color: #fff;
+			color: #FFFFFF;
 		}
 	}
 
@@ -249,13 +249,13 @@ Navbar
 		.active > .nav__link,
 		.nav__link.show,
 		.nav__link.active {
-			color: #fff;
+			color: #FFFFFF;
 		}
 	}
 
 	.navbar__toggler {
 		color: rgba(255, 255, 255, 0.5);
-  		border-color: rgba(255, 255, 255, 0.1);
+		border-color: rgba(255, 255, 255, 0.1);
 	}
 
 	.navbar__toggler-icon {
@@ -266,11 +266,11 @@ Navbar
 		color: rgba(255, 255, 255, 0.5);
 
 		a {
-			color: #fff;
+			color: #FFFFFF;
 
 			&:hover,
 			&:focus {
-				color: #fff;
+				color: #FFFFFF;
 			}
 		}
 	}

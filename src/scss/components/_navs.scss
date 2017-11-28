@@ -5,43 +5,42 @@ Navs
 */
 
 .nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
 
-    &__link {
-        display: block;
-        padding: 0.5rem 1rem;
+	&__link {
+		display: block;
+		padding: 0.5rem 1rem;
 
-        &:focus,
-        &:hover {
-            text-decoration: none;
-        }
+		&:focus,
+		&:hover {
+			text-decoration: none;
+		}
 
-        &.is-active {
-            font-weight: $font-weight-semi;
-        }
+		&.is-active {
+			font-weight: $font-weight-semi;
+		}
 
-        &.is-disabled {
-            color: #868e96;
-            cursor: not-allowed;
-        }
-        
-        /* Dropdown on nav */
+		&.is-disabled {
+			color: #868E96;
+			cursor: not-allowed;
+		}
 
-        &.dropdown {
-            
-        }
-    }
+		/* Dropdown on nav */
 
-    /* Full width nav */
+		&.dropdown {
+		}
+	}
 
-    &--fill {
-        .nav__item {
-            flex: 1 1 auto;
-            text-align: center;
-        }
-    }
+	/* Full width nav */
+
+	&--fill {
+		.nav__item {
+			flex: 1 1 auto;
+			text-align: center;
+		}
+	}
 }

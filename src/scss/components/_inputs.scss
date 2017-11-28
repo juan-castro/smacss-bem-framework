@@ -81,7 +81,7 @@ Form Inputs
 		}
 
 		/* Input Sizes */
-		
+
 		&--lg {
 			@include input-size(1.1rem, 2rem);
 		}
@@ -118,7 +118,7 @@ Form Inputs
 		background-color: #E9ECEF;
 		border: 1px solid #CED4DA;
 		display: flex;
-	    align-items: center;
+		align-items: center;
 	}
 
 	&__group {

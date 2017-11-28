@@ -1,65 +1,10 @@
-/* ===================================
-    Google font
-====================================== */
+
+/* Components */
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
-/*//== Buttons
-//
-//## For each of Bootstrap's buttons, define text, background and border color.*/
-
-/*$white-color: #FFFFFF !default;
-$white-bg: #FFFFFF !default;
-$orange-bg: #E95E38 !default;
-$smoke-bg: #F5F5F5 !default;
-$black-bg: rgba(30,30,30,0.97) !default;
-$black-hr: #444444 !default;
-$light-gray: #E3E3E3 !default;
-$medium-gray: #DDDDDD !default;
-$dark-gray: #9A9A9A !default;
-$opacity-gray-3: rgba(222,222,222, 0.3) !default;
-$opacity-gray-5: rgba(222,222,222, 0.5) !default;
-$opacity-5: rgba(255,255,255, 0.5) !default;
-$opacity-8: rgba(255,255,255, 0.8) !default;
-$datepicker-color-days: rgba(255,255,255, 0.8)  !default;
-$datepicker-color-old-new-days: rgba(255,255,255, 0.4)  !default;
-$opacity-1: rgba(255,255,255, 0.1) !default;
-$opacity-2: rgba(255,255,255, 0.2) !default;
-
-$dark-background: #555555 !default;
-
-
-
-$success-color-alert: rgba(24, 206, 15, 0.8) !default;
-$info-color: #2CA8FF !default;
-$info-states-color: #109CFF !default;
-$info-color-opacity: rgba(44, 168, 255, 0.3) !default;
-$info-color-alert: rgba(44, 168, 255, 0.8) !default;
-$warning-color: #FFB236 !default;
-$warning-states-color: darken($warning-color, 5%) !default;
-$warning-color-opacity: rgba(255, 178, 54, 0.3) !default;
-$warning-color-alert: rgba(255, 178, 54, 0.8) !default;
-$danger-color: #FF3636 !default;
-$danger-states-color: darken($danger-color, 5%) !default;
-$danger-color-opacity: rgba(255, 54, 54, 0.3) !default;
-$danger-color-alert: rgba(255, 54, 54, 0.8) !default;*/
-
-/*     brand Colors              */
-/*$brand-primary: $primary-color !default;
-$brand-info: $info-color !default;
-$brand-success: $success-color !default;
-$brand-warning: $warning-color !default;
-$brand-danger: $danger-color !default;
-$link-disabled-color: #666666 !default;*/
-
-/*      light colors         */
-/*$light-blue: rgba($primary-color, 0.2);
-$light-azure: rgba($info-color, 0.2);
-$light-green: rgba($success-color, 0.2);
-$light-orange: rgba($warning-color, 0.2);
-$light-red: rgba($danger-color, 0.2);
-*/
 /* Components */
 
 $padding-input-vertical: 11px !default;
@@ -103,38 +48,6 @@ $transition-bezier: cubic-bezier(0.34, 1.61, 0.7, 1) !default;
 $transition-ease: ease 0s;
 
 
-//$navbar-padding-a:               9px 13px;
-$navbar-margin-a: 15px 0;
-$padding-social-a: 10px 5px;
-$navbar-margin-a-btn: 15px 0;
-$navbar-margin-a-btn-round: 16px 0;
-$navbar-padding-a-icons: 6px 15px;
-$navbar-margin-a-icons: 6px  3px;
-$navbar-padding-base: 0.625rem;
-//$navbar-margin-brand:             5px  0px;
-
-$navbar-margin-brand-icons: 12px auto;
-$navbar-margin-btn: 15px  3px;
-$height-icon-sm: 32px;
-$width-icon-sm: 32px;
-$padding-icon-sm: 4px;
-$border-radius-icon-sm: 7px;
-$height-icon-message: 40px;
-$width-icon-message: 40px;
-$height-icon-message-sm: 20px;
-$width-icon-message-sm: 20px;
-$white-navbar: rgba(#FFFFFF, 0.96);
-$primary-navbar: rgba(#34ACDC, 0.98);
-$info-navbar: rgba(#5BCAFF, 0.98);
-$success-navbar: rgba(#4CD964, 0.98);
-$warning-navbar: rgba(#FF9500, 0.98);
-$danger-navbar: rgba(#FF4C40, 0.98);
-$topbar-x: topbar-x !default;
-$topbar-back: topbar-back !default;
-$bottombar-x: bottombar-x !default;
-$bottombar-back: bottombar-back !default;
-
-
 /* 
 -----------------------------------------------------------------
 Custom Variables
@@ -161,7 +74,6 @@ $icon-fill-color: #434343;
 $none: 0   !default;
 $border-thin: 1px !default;
 $border-thick: 2px !default;
-
 $primary-color: #F96332 !default;
 $primary-states-color: darken($primary-color, 5%) !default;
 $success-color: #18CE0F !default;
@@ -191,7 +103,6 @@ $font-size-small: 1.2rem       !default;
 $font-size-xsmall: 1rem       !default;
 $font-size-large-navbar: 2rem         !default;
 $font-size-blockquote: 1.1em        !default;
-
 $font-weight-light: 300         !default;
 $font-weight-normal: 400         !default;
 $font-weight-semi: 600         !default;
@@ -203,11 +114,17 @@ $line-height: 1.5            !default;
 $line-height-paragraph: 1.4            !default;
 $line-height-sm: 1              !default;
 $line-height-lg: 54px           !default;
+
+/* Spacing */
+
 $margin-b-xs: 0.5rem            !default;
 $margin-b-sm: 1rem           !default;
 $margin-b-md: 1.5rem           !default;
 $margin-b-lg: 2rem           !default;
 $margin-b-xl: 2.5rem           !default;
+
+/* Border Radius */
+
 $border: 1px solid   !default;
 $border-radius-extra-small: 0.125rem    !default;
 $border-radius-small: 0.1875rem   !default;
@@ -216,7 +133,7 @@ $border-radius-extreme: 0.875rem    !default;
 $border-radius-large-top: $border-radius-large $border-radius-large 0 0 !default;
 $border-radius-large-bottom: 0 0 $border-radius-large $border-radius-large !default;
 
-/* Breakpoints */
+/* Breakpoints for Navbar - Based on Bootstrap 4 */
 
 $grid-breakpoints: (
   xs: 0,
@@ -227,7 +144,18 @@ $grid-breakpoints: (
 ) !default;
 
 
+/* Flexbox Grid */
 
+$flexboxgrid-grid-columns: 12 !default; /* Set the number of columns you want to use on your layout */
+$flexboxgrid-gutter-width: 1rem !default; /* Set the gutter between columns */
+$flexboxgrid-outer-margin: 1.5rem !default; /* Set a margin for the container sides */
+$flexboxgrid-breakpoints: sm 576px 54rem,
+	md 768px 72rem,
+	lg 992px 96rem, 
+	xl 1200px 114rem !default;
+$flexboxgrid-max-width: 1200px !default;
+$gutter-compensation: $flexboxgrid-gutter-width * 0.5 * -1;
+$half-gutter-width: $flexboxgrid-gutter-width * 0.5;
 
 
 

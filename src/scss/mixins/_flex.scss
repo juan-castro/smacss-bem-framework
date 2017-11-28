@@ -3,22 +3,26 @@
 @mixin flexbox {
 	display: -webkit-box;
 	display: -webkit-flex;
-	display: -moz-flex;
+	display:    -moz-flex;
 	display: -ms-flexbox;
-	display: flex;
+	display:         flex;
 }
 
-%flexbox { @include flexbox; }
+%flexbox {
+	@include flexbox;
+}
 
 @mixin inline-flex {
 	display: -webkit-inline-box;
 	display: -webkit-inline-flex;
-	display: -moz-inline-flex;
+	display:    -moz-inline-flex;
 	display: -ms-inline-flexbox;
-	display: inline-flex;
+	display:         inline-flex;
 }
 
-%inline-flex { @include inline-flex; }
+%inline-flex {
+	@include inline-flex;
+}
 
 /* Flexbox Direction */
 
@@ -37,33 +41,35 @@
 		-webkit-box-orient: horizontal;
 	}
 	-webkit-flex-direction: $value;
-	-moz-flex-direction: $value;
-	-ms-flex-direction: $value;
-	flex-direction: $value;
+	   -moz-flex-direction: $value;
+	    -ms-flex-direction: $value;
+	        flex-direction: $value;
 }
 
-@mixin flex-dir($args...) { @include flex-direction($args...); }
+@mixin flex-dir($args...) {
+	@include flex-direction($args...);
+}
 
 /* Flexbox Wrap */
 
 @mixin flex-wrap($value: nowrap) {
 	-webkit-flex-wrap: $value;
-	-moz-flex-wrap: $value;
+	   -moz-flex-wrap: $value;
 	@if $value == nowrap {
 		-ms-flex-wrap: none;
-	} @else { 
-		-ms-flex-wrap: $value; 
+	} @else {
+		-ms-flex-wrap: $value;
 	}
-	flex-wrap: $value;
+	        flex-wrap: $value;
 }
 
 /* Flexbox Flow (shorthand) */
 
 @mixin flex-flow($values: (row nowrap)) {
 	-webkit-flex-flow: $values;
-	-moz-flex-flow: $values;
-	-ms-flex-flow: $values;
-	flex-flow: $values;
+	   -moz-flex-flow: $values;
+	    -ms-flex-flow: $values;
+	        flex-flow: $values;
 }
 
 /* Flexbox Order */
@@ -71,9 +77,9 @@
 @mixin order($int: 0) {
 	-webkit-box-ordinal-group: $int + 1;
 	-webkit-order: $int;
-	-moz-order: $int;
+	   -moz-order: $int;
 	-ms-flex-order: $int;
-	order: $int;
+	        order: $int;
 }
 
 /* Flexbox Grow */
@@ -81,44 +87,44 @@
 @mixin flex-grow($int: 0) {
 	-webkit-box-flex: $int;
 	-webkit-flex-grow: $int;
-	-moz-flex-grow: $int;
+	   -moz-flex-grow: $int;
 	-ms-flex-positive: $int;
-	flex-grow: $int;
+	        flex-grow: $int;
 }
 
 /* Flexbox Shrink */
 
 @mixin flex-shrink($int: 1) {
 	-webkit-flex-shrink: $int;
-	-moz-flex-shrink: $int;
+	   -moz-flex-shrink: $int;
 	-ms-flex-negative: $int;
-	flex-shrink: $int;
+	        flex-shrink: $int;
 }
 
 /* Flexbox Basis */
 
 @mixin flex-basis($value: auto) {
 	-webkit-flex-basis: $value;
-	-moz-flex-basis: $value;
+	   -moz-flex-basis: $value;
 	-ms-flex-preferred-size: $value;
-	flex-basis: $value;
+	        flex-basis: $value;
 }
 
 /* Flexbox "Flex" (shorthand) */
 
 @mixin flex($fg: 1, $fs: null, $fb: null) {
-   	$fg-boxflex: $fg;
+	$fg-boxflex: $fg;
 
-	@if type-of($fg) == 'list' {
+	@if type-of($fg) == "list" {
 		$fg-boxflex: nth($fg, 1);
 	}
 
 	-webkit-box-flex: $fg-boxflex;
 	-webkit-flex: $fg $fs $fb;
-	-moz-box-flex: $fg-boxflex;
-	-moz-flex: $fg $fs $fb;
-	-ms-flex: $fg $fs $fb;
-	flex: $fg $fs $fb;
+	   -moz-box-flex: $fg-boxflex;
+	   -moz-flex: $fg $fs $fb;
+	    -ms-flex: $fg $fs $fb;
+	        flex: $fg $fs $fb;
 }
 
 /* Flexbox Justify Content */
@@ -134,17 +140,19 @@
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 	} @else if $value == space-around {
-		-ms-flex-pack: distribute;		
+		-ms-flex-pack: distribute;
 	} @else {
 		-webkit-box-pack: $value;
 		-ms-flex-pack: $value;
 	}
 	-webkit-justify-content: $value;
-	-moz-justify-content: $value;
-	justify-content: $value;
+	   -moz-justify-content: $value;
+	        justify-content: $value;
 }
 
-@mixin flex-just($args...) { @include justify-content($args...); }
+@mixin flex-just($args...) {
+	@include justify-content($args...);
+}
 
 /* Flexbox Align Items */
 
@@ -160,15 +168,15 @@
 		-ms-flex-align: $value;
 	}
 	-webkit-align-items: $value;
-	-moz-align-items: $value;
-	align-items: $value;
+	   -moz-align-items: $value;
+	        align-items: $value;
 }
 
 /* Flexbox Align Self */
 
 @mixin align-self($value: auto) {
 	-webkit-align-self: $value;
-	-moz-align-self: $value;
+	   -moz-align-self: $value;
 	@if $value == flex-start {
 		-ms-flex-item-align: start;
 	} @else if $value == flex-end {
@@ -176,14 +184,14 @@
 	} @else {
 		-ms-flex-item-align: $value;
 	}
-	align-self: $value;
+	        align-self: $value;
 }
 
 /* Flexbox Align Content */
 
 @mixin align-content($value: stretch) {
 	-webkit-align-content: $value;
-	-moz-align-content: $value;
+	   -moz-align-content: $value;
 	@if $value == flex-start {
 		-ms-flex-line-pack: start;
 	} @else if $value == flex-end {
@@ -191,5 +199,5 @@
 	} @else {
 		-ms-flex-line-pack: $value;
 	}
-	align-content: $value;
+	        align-content: $value;
 }

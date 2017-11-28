@@ -20,10 +20,10 @@
 }
 
 @mixin transition-transform($transition...) {
-  -webkit-transition: -webkit-transform $transition;
-     -moz-transition: -moz-transform $transition;
-       -o-transition: -o-transform $transition;
-          transition: transform $transition;
+	-webkit-transition: -webkit-transform $transition;
+	   -moz-transition:    -moz-transform $transition;
+	     -o-transition:      -o-transform $transition;
+	        transition:         transform $transition;
 }
 
 @mixin rotate-180() {
@@ -60,20 +60,20 @@
 }
 
 @mixin perspective($perspective) {
-  -webkit-perspective: $perspective;
-     -moz-perspective: $perspective;
-          perspective: $perspective;
+	-webkit-perspective: $perspective;
+	   -moz-perspective: $perspective;
+	        perspective: $perspective;
 }
 
 @mixin backface-visibility($visibility) {
-  -webkit-backface-visibility: $visibility;
-     -moz-backface-visibility: $visibility;
-          backface-visibility: $visibility;
+	-webkit-backface-visibility: $visibility;
+	   -moz-backface-visibility: $visibility;
+	        backface-visibility: $visibility;
 }
 
 @mixin translate3d($x, $y, $z) {
-  -webkit-transform: translate3d($x, $y, $z);
-          transform: translate3d($x, $y, $z);
+	-webkit-transform: translate3d($x, $y, $z);
+	        transform: translate3d($x, $y, $z);
 }
 
 @mixin topbar-x-rotation() {
