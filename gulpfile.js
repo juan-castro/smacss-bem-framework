@@ -8,18 +8,31 @@ const reporter      = require('postcss-reporter');      // Log PostCSS messages 
 const stylelint     = require('stylelint');             // CSS linter
 const syntax_scss 	= require('postcss-scss');			// PostCss for Sass
 const csscomb 		= require('gulp-csscomb');			// CSS Comb formats the document
-const minify        = require('gulp-cssnano');          //CSS Minification
-
+const minify        = require('gulp-cssnano');          // CSS Minification
+const rename        = require('gulp-rename');			// Rename files
+const concat        = require('gulp-concat');			// Concatenate files
+const uglify        = require('gulp-uglify');			// Minify JS
 
 // Store const for src and output directories
 const root = __dirname;
 const paths = {
-  src: {
-    css:     path.join(root, 'src/scss/**/*.scss')
-  },
-  output: {
-  	css: 	 path.join(root, 'build/css')
-  } 
+	src: {
+		css:    [
+					path.join(root, 'src/scss/library/bid-client.scss'),
+					path.join(root, 'src/scss/library/management-client.scss'),
+					path.join(root, 'src/scss/library/onsite-client.scss'),
+					path.join(root, 'src/scss/library/podium-client.scss'),
+					path.join(root, 'src/scss/library/support-client.scss')
+				],
+		js:     [
+					'src/js/core/jquery.3.2.1.min.js',
+					'src/js/core/bootstrap.min.js'
+				]
+	},
+	output: {
+		css: 	 path.join(root, 'build/css'),
+		js: 	 path.join(root, 'build/js')
+	} 
 };
 
 // Complile SASS files into CSS and save it to 'dist/css'
@@ -29,6 +42,9 @@ gulp.task('compileSass', function() {
 			.pipe(sass())
 			.pipe(minify({keepSpecialComments:0}))
 			.pipe(maps.write('./'))
+			.pipe(rename({
+		    	suffix: '.min'
+		    }))
 			.pipe(gulp.dest(paths.output.css))
 });
 
@@ -54,11 +70,19 @@ gulp.task('lintStyles', function() {
 	));
 });
 
+// JS - Concat and minify Files
+gulp.task('minifyScripts', function() {
+    return gulp.src(paths.src.js)
+        .pipe(concat('scripts.js'))
+        .pipe(rename('scripts.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest(paths.output.js));
+});
+
 // Watch files and run compileSass
 gulp.task('watchFiles', function() {
 	gulp.watch(paths.src.css, ['compileSass']);
 });
-
 
 // Default Task
 gulp.task('default', function() {
