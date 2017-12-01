@@ -3,7 +3,6 @@ const gulp 			= require('gulp');					// Gulp core
 const sass 			= require('gulp-sass');				// Sass gulp package
 const maps          = require('gulp-sourcemaps');		// Create Sass sourcemaps
 const postcss       = require('gulp-postcss');          // Transforming CSS with JS plugins
-const path          = require('path');                  // Node.JS path module
 const reporter      = require('postcss-reporter');      // Log PostCSS messages in the console
 const stylelint     = require('stylelint');             // CSS linter
 const syntax_scss 	= require('postcss-scss');			// PostCss for Sass
@@ -14,15 +13,14 @@ const concat        = require('gulp-concat');			// Concatenate files
 const uglify        = require('gulp-uglify');			// Minify JS
 
 // Store const for src and output directories
-const root = __dirname;
 const paths = {
 	src: {
 		css:    [
-					path.join(root, 'src/scss/library/bid-client.scss'),
-					path.join(root, 'src/scss/library/management-client.scss'),
-					path.join(root, 'src/scss/library/onsite-client.scss'),
-					path.join(root, 'src/scss/library/podium-client.scss'),
-					path.join(root, 'src/scss/library/support-client.scss')
+					'src/scss/library/bid-client.scss',
+		            'src/scss/library/management-client.scss',
+		            'src/scss/library/onsite-client.scss',
+		            'src/scss/library/podium-client.scss',
+		            'src/scss/library/support-client.scss'
 				],
 		js:     [
 					'src/js/core/jquery.3.2.1.min.js',
@@ -30,8 +28,8 @@ const paths = {
 				]
 	},
 	output: {
-		css: 	 path.join(root, 'build/css'),
-		js: 	 path.join(root, 'build/js')
+		css: 	 'build/css',
+		js: 	 'build/js'
 	} 
 };
 
@@ -50,14 +48,14 @@ gulp.task('compileSass', function() {
 
 // Format SASS document (Reference: http://csscomb.com)
 gulp.task('formatStyles', function() {
-  return gulp.src(paths.src.css, {base: "./"})
+  return gulp.src('src/scss/**/*.scss', {base: "./"})
     		.pipe(csscomb())
     		.pipe(gulp.dest("./"));
 });
 
 // Lint CSS files (Rules: http://stylelint.io/user-guide/rules) 
 gulp.task('lintStyles', function() {
-	return gulp.src(paths.src.css)
+	return gulp.src('src/scss/**/*.scss')
 		.pipe(postcss([
 			stylelint(),
 			reporter({
@@ -81,13 +79,17 @@ gulp.task('minifyScripts', function() {
 
 // Watch files and run compileSass
 gulp.task('watchFiles', function() {
-	gulp.watch(paths.src.css, ['compileSass']);
+	gulp.watch('src/scss/**/*.scss', ['compileSass']);
 });
 
 // Default Task
 gulp.task('default', function() {
     gulp.start(['compileSass']);
-})
+});
+
+
+
+
 
 
 
